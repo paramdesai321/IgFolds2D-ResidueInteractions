@@ -69,16 +69,18 @@ dd{margin:0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;overflow-wra
     <div id="legend"></div>
     <div id="inspector"><p style="color:#888">hover / click a cell</p></div>
     <div class="seg-legend">
-      <span style="background:#7c3aed;color:#fff">A</span>
-      <span style="background:#a855f7;color:#fff">A′</span>
-      <span style="background:#c084fc">B</span>
-      <span style="background:#2563eb;color:#fff">C</span>
-      <span style="background:#60a5fa">C′</span>
-      <span style="background:#f97316">C″</span>
-      <span style="background:#ef4444;color:#fff">D</span>
-      <span style="background:#facc15">E</span>
-      <span style="background:#22c55e">F</span>
-      <span style="background:#15803d;color:#fff">G</span>
+      <span style="background:#9400D3;color:white">A</span>
+      <span style="background:#9400D3;color:white">A′</span>
+      <span style="background:#BA55D3;color:white">B</span>
+      <span style="background:#0000FF;color:white">C</span>
+      <span style="background:#6495ED;color:white">C′</span>
+      <span style="background:#006400;color:white">C″</span>
+      <span style="background:#00FF00;color:#111">D</span>
+      <span style="background:#FFD700;color:#111">E</span>
+      <span style="background:#FF8C00;color:#111">F</span>
+      <span style="background:#FF0000;color:white">G</span>
+      <span style="background:#CCCCCC;color:#111">Loops</span>
+      <span style="background:#00FFFF;color:#111">Ext.</span>
     </div>
   </aside>
 </main>
@@ -87,9 +89,14 @@ dd{margin:0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;overflow-wra
   "use strict";
   const NS="http://www.w3.org/2000/svg";
   const SEGMENT_COLORS={
-    "A":"#7c3aed","A'":"#a855f7","B":"#c084fc","C":"#2563eb",
-    "C'":"#60a5fa","C''":"#f97316","D":"#ef4444","E":"#facc15",
-    "F":"#22c55e","G":"#15803d","unknown":"#d1d5db"
+    "A":"#9400D3","A'":"#9400D3","A''":"#9400D3",
+    "B":"#BA55D3",
+    "C":"#0000FF","C'":"#6495ED","C''":"#006400",
+    "D":"#00FF00","E":"#FFD700","F":"#FF8C00",
+    "G":"#FF0000","G'":"#FF0000","G''":"#FF0000",
+    "Loop":"#CCCCCC","Loops":"#CCCCCC","Connector":"#CCCCCC",
+    "Extension":"#00FFFF","Ext":"#00FFFF","Insertion":"#FFFFFF",
+    "unknown":"#CCCCCC"
   };
 
   // Same ramp as GPCRfold2D helix4_density: pale → saturated teal
@@ -121,7 +128,7 @@ dd{margin:0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;overflow-wra
   function textFill(m,cmode,dens,densMax){
     if(cmode==="hbond_density") return dens >= densMax*0.55 ? "#fff" : "#111";
     if(cmode==="none") return "#111";
-    return ["E","C''"].includes(m.segment) ? "#111827" : "#ffffff";
+    return ["D","E","F","C'","Loop","Loops","Connector","Extension","Ext","Insertion"].includes(m.segment) ? "#111827" : "#ffffff";
   }
 
   function render(container,data,options={}){
