@@ -1,49 +1,37 @@
-# Feature vectors (layered) — Excel-only Layer 1
+# IgFolds2D Residue Interactions
 
-## Input (required)
+Branch: `Hbonds`
 
-Only this file:
+Layered feature vectors for an IgV domain (CD8α / PDB **1CD8**).
 
-```
-1CD8_ig_diagram.xlsx
-```
+## Inputs
 
-Sheet `1. IgV` must have:
+| File | Role |
+|------|------|
+| `1CD8_ig_diagram.xlsx` | Layer 1 identity (sheet `1. IgV`) |
+| `P01732-allinteraction.html` | Layer 4 H-bond density (iCn3D table) |
 
-- left map: residues like `C22`
-- right map (same places, +21 columns): IgStrand numbers like `2550`
-- row 6 strand headers (`A`, `B`, `A'`, …)
-
-## Build
+## Build data
 
 ```bash
-.venv/bin/python feature_vectors/build_layer1_cd8a.py ~/Downloads/1CD8_ig_diagram.xlsx
+.venv/bin/python build_layer1_cd8a.py
 ```
 
-Or with defaults:
+**Output:** `CD8a-P01732.layers.json`
 
-```bash
-.venv/bin/python feature_vectors/build_layer1_cd8a.py
+## View
+
+Open this file in a browser (double-click or File → Open):
+
+```
+layer1_viz.html
 ```
 
-## Output
+It is self-contained (data embedded). No extra build step.
 
-`feature_vectors/CD8a-P01732.layers.json`
+**Couleur modes** (like GPCRfold2D):
+- `none` — white cells
+- `segment` — strand colors
+- `hbond_density` — pale→saturated teal ramp (same as `helix4_density`)
 
-## What Layer 1 contains
-
-| Field | Source in Excel |
-|-------|-----------------|
-| residue | left cell letter |
-| pdb.pos | left cell number |
-| foldnum (IgStrand) | right twin cell |
-| spreadsheet_cell | Excel address |
-| template_position | same as spreadsheet row/col |
-| segment | row-6 header (else inferred from IgStrand) |
-| domain | sheet title `IgV` |
-| seq_num | order by IgStrand |
-| chain | default `A` (1CD8) |
-
-`uniprot.pos` is `null` for now — that index is not written on the sheet.
-
-Layers 2–5 are empty stubs for later (H-bonds, MSA, etc.).
+Toggle **H-bonds** for edges; inspector lists partners, distances, weights.

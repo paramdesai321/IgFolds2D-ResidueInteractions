@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1",
+  "schema_version": "0.2",
   "fold": "IgV",
   "protein": {
     "id": "P01732",
@@ -10,22 +10,22 @@
   "template": {
     "id": "excel:1CD8_ig_diagram",
     "numbering_scheme": "IgStrand",
-    "source": "/Users/nicolemathias/Downloads/1CD8_ig_diagram.xlsx"
+    "source": "/Users/nicolemathias/Documents/IgFolds2D-ResidueInteractions/1CD8_ig_diagram.xlsx"
   },
   "sources": {
-    "excel": "/Users/nicolemathias/Downloads/1CD8_ig_diagram.xlsx",
+    "excel": "/Users/nicolemathias/Documents/IgFolds2D-ResidueInteractions/1CD8_ig_diagram.xlsx",
     "pdb": {
       "id": "1CD8",
       "chain": "A"
     },
     "uniprot": {
-      "id": "P01732",
-      "note": "id known; residue positions not on sheet"
-    }
+      "id": "P01732"
+    },
+    "interaction_html": "/Users/nicolemathias/Documents/IgFolds2D-ResidueInteractions/P01732-allinteraction.html"
   },
   "layer_defs": {
     "1_identity": {
-      "description": "Addressing & identity from Excel only",
+      "description": "Addressing & identity from Excel (+ UniProt pos from interaction map)",
       "fields": [
         "seq_num",
         "residue",
@@ -46,7 +46,16 @@
       "description": "From 3D model"
     },
     "4_interaction": {
-      "description": "H-bonds, contacts, weights"
+      "description": "H-bond density & partners from iCn3D interaction table",
+      "fields": [
+        "hbond_density",
+        "hbond_count",
+        "backbone_count",
+        "sidechain_count",
+        "mixed_count",
+        "weight_total",
+        "bonds"
+      ]
     },
     "5_comparative": {
       "description": "MSA / mutations"
@@ -66,7 +75,10 @@
       "E",
       "F",
       "G"
-    ]
+    ],
+    "hbond_edges_on_map": 105,
+    "residues_with_hbonds": 91,
+    "hbond_density_max": 6
   },
   "residues": [
     {
@@ -95,7 +107,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 23
           },
           "pdb": {
             "id": "1CD8",
@@ -105,7 +117,15 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 0,
+          "hbond_count": 0,
+          "backbone_count": 0,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 0,
+          "bonds": []
+        },
         "5_comparative": {}
       }
     },
@@ -135,7 +155,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 24
           },
           "pdb": {
             "id": "1CD8",
@@ -145,7 +165,15 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 0,
+          "hbond_count": 0,
+          "backbone_count": 0,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 0,
+          "bonds": []
+        },
         "5_comparative": {}
       }
     },
@@ -175,7 +203,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 25
           },
           "pdb": {
             "id": "1CD8",
@@ -185,7 +213,38 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 2,
+          "hbond_count": 2,
+          "backbone_count": 2,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 1.3,
+          "bonds": [
+            {
+              "partner_pdb": 23,
+              "partner_uniprot": 44,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 2.8,
+              "weight": 0.7,
+              "type": "backbone",
+              "sep": 19
+            },
+            {
+              "partner_pdb": 23,
+              "partner_uniprot": 44,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 2.9,
+              "weight": 0.6,
+              "type": "backbone",
+              "sep": 19
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -215,7 +274,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 26
           },
           "pdb": {
             "id": "1CD8",
@@ -225,7 +284,15 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 0,
+          "hbond_count": 0,
+          "backbone_count": 0,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 0,
+          "bonds": []
+        },
         "5_comparative": {}
       }
     },
@@ -255,7 +322,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 27
           },
           "pdb": {
             "id": "1CD8",
@@ -265,7 +332,38 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 2,
+          "hbond_count": 2,
+          "backbone_count": 2,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 1.3,
+          "bonds": [
+            {
+              "partner_pdb": 21,
+              "partner_uniprot": 42,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 2.8,
+              "weight": 0.7,
+              "type": "backbone",
+              "sep": 15
+            },
+            {
+              "partner_pdb": 21,
+              "partner_uniprot": 42,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 2.9,
+              "weight": 0.6,
+              "type": "backbone",
+              "sep": 15
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -295,7 +393,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 28
           },
           "pdb": {
             "id": "1CD8",
@@ -305,7 +403,15 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 0,
+          "hbond_count": 0,
+          "backbone_count": 0,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 0,
+          "bonds": []
+        },
         "5_comparative": {}
       }
     },
@@ -335,7 +441,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 30
           },
           "pdb": {
             "id": "1CD8",
@@ -345,7 +451,15 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 0,
+          "hbond_count": 0,
+          "backbone_count": 0,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 0,
+          "bonds": []
+        },
         "5_comparative": {}
       }
     },
@@ -375,7 +489,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 31
           },
           "pdb": {
             "id": "1CD8",
@@ -385,7 +499,38 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 2,
+          "hbond_count": 2,
+          "backbone_count": 1,
+          "sidechain_count": 1,
+          "mixed_count": 0,
+          "weight_total": 0.4,
+          "bonds": [
+            {
+              "partner_pdb": null,
+              "partner_uniprot": 29,
+              "partner_on_map": false,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 3.1,
+              "weight": 0.4,
+              "type": "backbone",
+              "sep": 2
+            },
+            {
+              "partner_pdb": 12,
+              "partner_uniprot": 33,
+              "partner_on_map": true,
+              "self_atom": "NE",
+              "partner_atom": "NE1",
+              "distance": 3.7,
+              "weight": 0.0,
+              "type": "sidechain",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -415,7 +560,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 32
           },
           "pdb": {
             "id": "1CD8",
@@ -425,7 +570,15 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 0,
+          "hbond_count": 0,
+          "backbone_count": 0,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 0,
+          "bonds": []
+        },
         "5_comparative": {}
       }
     },
@@ -455,7 +608,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 33
           },
           "pdb": {
             "id": "1CD8",
@@ -465,7 +618,27 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 1,
+          "hbond_count": 1,
+          "backbone_count": 0,
+          "sidechain_count": 1,
+          "mixed_count": 0,
+          "weight_total": 0.0,
+          "bonds": [
+            {
+              "partner_pdb": 10,
+              "partner_uniprot": 31,
+              "partner_on_map": true,
+              "self_atom": "NE1",
+              "partner_atom": "NE",
+              "distance": 3.7,
+              "weight": 0.0,
+              "type": "sidechain",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -495,7 +668,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 34
           },
           "pdb": {
             "id": "1CD8",
@@ -505,7 +678,60 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 4,
+          "hbond_count": 4,
+          "backbone_count": 2,
+          "sidechain_count": 1,
+          "mixed_count": 1,
+          "weight_total": 1.5,
+          "bonds": [
+            {
+              "partner_pdb": 16,
+              "partner_uniprot": 37,
+              "partner_on_map": true,
+              "self_atom": "ND2",
+              "partner_atom": "OE1",
+              "distance": 2.8,
+              "weight": 0.7,
+              "type": "sidechain",
+              "sep": 3
+            },
+            {
+              "partner_pdb": 16,
+              "partner_uniprot": 37,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 3.1,
+              "weight": 0.4,
+              "type": "backbone",
+              "sep": 3
+            },
+            {
+              "partner_pdb": 16,
+              "partner_uniprot": 37,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "OE2",
+              "distance": 3.2,
+              "weight": 0.3,
+              "type": "mixed",
+              "sep": 3
+            },
+            {
+              "partner_pdb": 15,
+              "partner_uniprot": 36,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 3.4,
+              "weight": 0.1,
+              "type": "backbone",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -535,7 +761,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 35
           },
           "pdb": {
             "id": "1CD8",
@@ -545,7 +771,27 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 1,
+          "hbond_count": 1,
+          "backbone_count": 1,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 0.1,
+          "bonds": [
+            {
+              "partner_pdb": 16,
+              "partner_uniprot": 37,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 3.4,
+              "weight": 0.1,
+              "type": "backbone",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -575,7 +821,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 36
           },
           "pdb": {
             "id": "1CD8",
@@ -585,7 +831,38 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 2,
+          "hbond_count": 2,
+          "backbone_count": 2,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 0.7,
+          "bonds": [
+            {
+              "partner_pdb": 84,
+              "partner_uniprot": 105,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 2.9,
+              "weight": 0.6,
+              "type": "backbone",
+              "sep": 69
+            },
+            {
+              "partner_pdb": 13,
+              "partner_uniprot": 34,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 3.4,
+              "weight": 0.1,
+              "type": "backbone",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -615,7 +892,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 37
           },
           "pdb": {
             "id": "1CD8",
@@ -625,7 +902,82 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 6,
+          "hbond_count": 6,
+          "backbone_count": 4,
+          "sidechain_count": 1,
+          "mixed_count": 1,
+          "weight_total": 2.0,
+          "bonds": [
+            {
+              "partner_pdb": 13,
+              "partner_uniprot": 34,
+              "partner_on_map": true,
+              "self_atom": "OE1",
+              "partner_atom": "ND2",
+              "distance": 2.8,
+              "weight": 0.7,
+              "type": "sidechain",
+              "sep": 3
+            },
+            {
+              "partner_pdb": 84,
+              "partner_uniprot": 105,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 3.0,
+              "weight": 0.5,
+              "type": "backbone",
+              "sep": 68
+            },
+            {
+              "partner_pdb": 13,
+              "partner_uniprot": 34,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 3.1,
+              "weight": 0.4,
+              "type": "backbone",
+              "sep": 3
+            },
+            {
+              "partner_pdb": 13,
+              "partner_uniprot": 34,
+              "partner_on_map": true,
+              "self_atom": "OE2",
+              "partner_atom": "N",
+              "distance": 3.2,
+              "weight": 0.3,
+              "type": "mixed",
+              "sep": 3
+            },
+            {
+              "partner_pdb": 14,
+              "partner_uniprot": 35,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 3.4,
+              "weight": 0.1,
+              "type": "backbone",
+              "sep": 2
+            },
+            {
+              "partner_pdb": 18,
+              "partner_uniprot": 39,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 3.6,
+              "weight": 0.0,
+              "type": "backbone",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -655,7 +1007,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 38
           },
           "pdb": {
             "id": "1CD8",
@@ -665,7 +1017,38 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 2,
+          "hbond_count": 2,
+          "backbone_count": 1,
+          "sidechain_count": 0,
+          "mixed_count": 1,
+          "weight_total": 0.3,
+          "bonds": [
+            {
+              "partner_pdb": 82,
+              "partner_uniprot": 103,
+              "partner_on_map": true,
+              "self_atom": "OG1",
+              "partner_atom": "O",
+              "distance": 3.2,
+              "weight": 0.3,
+              "type": "mixed",
+              "sep": 65
+            },
+            {
+              "partner_pdb": 19,
+              "partner_uniprot": 40,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 3.8,
+              "weight": 0.0,
+              "type": "backbone",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -695,7 +1078,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 39
           },
           "pdb": {
             "id": "1CD8",
@@ -705,7 +1088,49 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 3,
+          "hbond_count": 3,
+          "backbone_count": 3,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 1.4,
+          "bonds": [
+            {
+              "partner_pdb": 81,
+              "partner_uniprot": 102,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 2.8,
+              "weight": 0.7,
+              "type": "backbone",
+              "sep": 63
+            },
+            {
+              "partner_pdb": 81,
+              "partner_uniprot": 102,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 2.8,
+              "weight": 0.7,
+              "type": "backbone",
+              "sep": 63
+            },
+            {
+              "partner_pdb": 16,
+              "partner_uniprot": 37,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 3.6,
+              "weight": 0.0,
+              "type": "backbone",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -735,7 +1160,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 40
           },
           "pdb": {
             "id": "1CD8",
@@ -745,7 +1170,27 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 1,
+          "hbond_count": 1,
+          "backbone_count": 1,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 0.0,
+          "bonds": [
+            {
+              "partner_pdb": 17,
+              "partner_uniprot": 38,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 3.8,
+              "weight": 0.0,
+              "type": "backbone",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -775,7 +1220,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 41
           },
           "pdb": {
             "id": "1CD8",
@@ -785,7 +1230,38 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 2,
+          "hbond_count": 2,
+          "backbone_count": 2,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 1.3,
+          "bonds": [
+            {
+              "partner_pdb": 79,
+              "partner_uniprot": 100,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 2.8,
+              "weight": 0.7,
+              "type": "backbone",
+              "sep": 59
+            },
+            {
+              "partner_pdb": 79,
+              "partner_uniprot": 100,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 2.9,
+              "weight": 0.6,
+              "type": "backbone",
+              "sep": 59
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -815,7 +1291,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 42
           },
           "pdb": {
             "id": "1CD8",
@@ -825,7 +1301,38 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 2,
+          "hbond_count": 2,
+          "backbone_count": 2,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 1.3,
+          "bonds": [
+            {
+              "partner_pdb": 6,
+              "partner_uniprot": 27,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 2.8,
+              "weight": 0.7,
+              "type": "backbone",
+              "sep": 15
+            },
+            {
+              "partner_pdb": 6,
+              "partner_uniprot": 27,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 2.9,
+              "weight": 0.6,
+              "type": "backbone",
+              "sep": 15
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -855,7 +1362,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 43
           },
           "pdb": {
             "id": "1CD8",
@@ -865,7 +1372,49 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 3,
+          "hbond_count": 3,
+          "backbone_count": 3,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 1.3,
+          "bonds": [
+            {
+              "partner_pdb": 77,
+              "partner_uniprot": 98,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 2.8,
+              "weight": 0.7,
+              "type": "backbone",
+              "sep": 55
+            },
+            {
+              "partner_pdb": 77,
+              "partner_uniprot": 98,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 2.9,
+              "weight": 0.6,
+              "type": "backbone",
+              "sep": 55
+            },
+            {
+              "partner_pdb": 24,
+              "partner_uniprot": 45,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 3.8,
+              "weight": 0.0,
+              "type": "backbone",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -895,7 +1444,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 44
           },
           "pdb": {
             "id": "1CD8",
@@ -905,7 +1454,49 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 3,
+          "hbond_count": 3,
+          "backbone_count": 3,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 1.3,
+          "bonds": [
+            {
+              "partner_pdb": 4,
+              "partner_uniprot": 25,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 2.8,
+              "weight": 0.7,
+              "type": "backbone",
+              "sep": 19
+            },
+            {
+              "partner_pdb": 4,
+              "partner_uniprot": 25,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 2.9,
+              "weight": 0.6,
+              "type": "backbone",
+              "sep": 19
+            },
+            {
+              "partner_pdb": 25,
+              "partner_uniprot": 46,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 3.7,
+              "weight": 0.0,
+              "type": "backbone",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -935,7 +1526,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 45
           },
           "pdb": {
             "id": "1CD8",
@@ -945,7 +1536,38 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 2,
+          "hbond_count": 2,
+          "backbone_count": 2,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 0.6,
+          "bonds": [
+            {
+              "partner_pdb": 75,
+              "partner_uniprot": 96,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 2.9,
+              "weight": 0.6,
+              "type": "backbone",
+              "sep": 51
+            },
+            {
+              "partner_pdb": 22,
+              "partner_uniprot": 43,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 3.8,
+              "weight": 0.0,
+              "type": "backbone",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -975,7 +1597,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 46
           },
           "pdb": {
             "id": "1CD8",
@@ -985,7 +1607,38 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 2,
+          "hbond_count": 2,
+          "backbone_count": 2,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 0.0,
+          "bonds": [
+            {
+              "partner_pdb": 23,
+              "partner_uniprot": 44,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 3.7,
+              "weight": 0.0,
+              "type": "backbone",
+              "sep": 2
+            },
+            {
+              "partner_pdb": 27,
+              "partner_uniprot": 48,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 3.8,
+              "weight": 0.0,
+              "type": "backbone",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -1015,7 +1668,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 47
           },
           "pdb": {
             "id": "1CD8",
@@ -1025,7 +1678,27 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 1,
+          "hbond_count": 1,
+          "backbone_count": 1,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 0.0,
+          "bonds": [
+            {
+              "partner_pdb": 28,
+              "partner_uniprot": 49,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 3.6,
+              "weight": 0.0,
+              "type": "backbone",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -1055,7 +1728,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 48
           },
           "pdb": {
             "id": "1CD8",
@@ -1065,7 +1738,38 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 2,
+          "hbond_count": 2,
+          "backbone_count": 2,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 0.1,
+          "bonds": [
+            {
+              "partner_pdb": 29,
+              "partner_uniprot": 50,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 3.4,
+              "weight": 0.1,
+              "type": "backbone",
+              "sep": 2
+            },
+            {
+              "partner_pdb": 25,
+              "partner_uniprot": 46,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 3.8,
+              "weight": 0.0,
+              "type": "backbone",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -1095,7 +1799,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 49
           },
           "pdb": {
             "id": "1CD8",
@@ -1105,7 +1809,38 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 2,
+          "hbond_count": 2,
+          "backbone_count": 2,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 0.0,
+          "bonds": [
+            {
+              "partner_pdb": 30,
+              "partner_uniprot": 51,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 3.5,
+              "weight": 0.0,
+              "type": "backbone",
+              "sep": 2
+            },
+            {
+              "partner_pdb": 26,
+              "partner_uniprot": 47,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 3.6,
+              "weight": 0.0,
+              "type": "backbone",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -1135,7 +1870,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 50
           },
           "pdb": {
             "id": "1CD8",
@@ -1145,7 +1880,38 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 2,
+          "hbond_count": 2,
+          "backbone_count": 2,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 0.1,
+          "bonds": [
+            {
+              "partner_pdb": 27,
+              "partner_uniprot": 48,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 3.4,
+              "weight": 0.1,
+              "type": "backbone",
+              "sep": 2
+            },
+            {
+              "partner_pdb": 31,
+              "partner_uniprot": 52,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 3.7,
+              "weight": 0.0,
+              "type": "backbone",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -1175,7 +1941,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 51
           },
           "pdb": {
             "id": "1CD8",
@@ -1185,7 +1951,49 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 3,
+          "hbond_count": 3,
+          "backbone_count": 3,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 1.4,
+          "bonds": [
+            {
+              "partner_pdb": 32,
+              "partner_uniprot": 53,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 2.7,
+              "weight": 0.8,
+              "type": "backbone",
+              "sep": 2
+            },
+            {
+              "partner_pdb": 97,
+              "partner_uniprot": 118,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 2.9,
+              "weight": 0.6,
+              "type": "backbone",
+              "sep": 67
+            },
+            {
+              "partner_pdb": 28,
+              "partner_uniprot": 49,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 3.5,
+              "weight": 0.0,
+              "type": "backbone",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -1215,7 +2023,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 52
           },
           "pdb": {
             "id": "1CD8",
@@ -1225,7 +2033,38 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 2,
+          "hbond_count": 2,
+          "backbone_count": 2,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 0.0,
+          "bonds": [
+            {
+              "partner_pdb": 54,
+              "partner_uniprot": 75,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 3.6,
+              "weight": 0.0,
+              "type": "backbone",
+              "sep": 23
+            },
+            {
+              "partner_pdb": 29,
+              "partner_uniprot": 50,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 3.7,
+              "weight": 0.0,
+              "type": "backbone",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -1255,7 +2094,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 53
           },
           "pdb": {
             "id": "1CD8",
@@ -1265,7 +2104,27 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 1,
+          "hbond_count": 1,
+          "backbone_count": 1,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 0.8,
+          "bonds": [
+            {
+              "partner_pdb": 30,
+              "partner_uniprot": 51,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 2.7,
+              "weight": 0.8,
+              "type": "backbone",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -1295,7 +2154,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 54
           },
           "pdb": {
             "id": "1CD8",
@@ -1305,7 +2164,38 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 2,
+          "hbond_count": 2,
+          "backbone_count": 2,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 1.3,
+          "bonds": [
+            {
+              "partner_pdb": 52,
+              "partner_uniprot": 73,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 2.8,
+              "weight": 0.7,
+              "type": "backbone",
+              "sep": 19
+            },
+            {
+              "partner_pdb": 52,
+              "partner_uniprot": 73,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 2.9,
+              "weight": 0.6,
+              "type": "backbone",
+              "sep": 19
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -1335,7 +2225,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 55
           },
           "pdb": {
             "id": "1CD8",
@@ -1345,7 +2235,38 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 2,
+          "hbond_count": 2,
+          "backbone_count": 2,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 1.3,
+          "bonds": [
+            {
+              "partner_pdb": 95,
+              "partner_uniprot": 116,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 2.8,
+              "weight": 0.7,
+              "type": "backbone",
+              "sep": 61
+            },
+            {
+              "partner_pdb": 95,
+              "partner_uniprot": 116,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 2.9,
+              "weight": 0.6,
+              "type": "backbone",
+              "sep": 61
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -1375,7 +2296,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 56
           },
           "pdb": {
             "id": "1CD8",
@@ -1385,7 +2306,49 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 3,
+          "hbond_count": 3,
+          "backbone_count": 3,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 1.4,
+          "bonds": [
+            {
+              "partner_pdb": 50,
+              "partner_uniprot": 71,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 2.8,
+              "weight": 0.7,
+              "type": "backbone",
+              "sep": 15
+            },
+            {
+              "partner_pdb": 49,
+              "partner_uniprot": 70,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 2.9,
+              "weight": 0.6,
+              "type": "backbone",
+              "sep": 14
+            },
+            {
+              "partner_pdb": 50,
+              "partner_uniprot": 71,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 3.4,
+              "weight": 0.1,
+              "type": "backbone",
+              "sep": 15
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -1415,7 +2378,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 57
           },
           "pdb": {
             "id": "1CD8",
@@ -1425,7 +2388,38 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 2,
+          "hbond_count": 2,
+          "backbone_count": 2,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 1.2,
+          "bonds": [
+            {
+              "partner_pdb": 93,
+              "partner_uniprot": 114,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 2.8,
+              "weight": 0.7,
+              "type": "backbone",
+              "sep": 57
+            },
+            {
+              "partner_pdb": 93,
+              "partner_uniprot": 114,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 3.0,
+              "weight": 0.5,
+              "type": "backbone",
+              "sep": 57
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -1455,7 +2449,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 58
           },
           "pdb": {
             "id": "1CD8",
@@ -1465,7 +2459,38 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 2,
+          "hbond_count": 2,
+          "backbone_count": 2,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 1.4,
+          "bonds": [
+            {
+              "partner_pdb": 47,
+              "partner_uniprot": 68,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 2.8,
+              "weight": 0.7,
+              "type": "backbone",
+              "sep": 10
+            },
+            {
+              "partner_pdb": 47,
+              "partner_uniprot": 68,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 2.8,
+              "weight": 0.7,
+              "type": "backbone",
+              "sep": 10
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -1495,7 +2520,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 59
           },
           "pdb": {
             "id": "1CD8",
@@ -1505,7 +2530,60 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 4,
+          "hbond_count": 4,
+          "backbone_count": 2,
+          "sidechain_count": 0,
+          "mixed_count": 2,
+          "weight_total": 2.1,
+          "bonds": [
+            {
+              "partner_pdb": 44,
+              "partner_uniprot": 65,
+              "partner_on_map": true,
+              "self_atom": "NE2",
+              "partner_atom": "O",
+              "distance": 2.8,
+              "weight": 0.7,
+              "type": "mixed",
+              "sep": 6
+            },
+            {
+              "partner_pdb": 91,
+              "partner_uniprot": 112,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 2.8,
+              "weight": 0.7,
+              "type": "backbone",
+              "sep": 53
+            },
+            {
+              "partner_pdb": 91,
+              "partner_uniprot": 112,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 2.9,
+              "weight": 0.6,
+              "type": "backbone",
+              "sep": 53
+            },
+            {
+              "partner_pdb": 39,
+              "partner_uniprot": 60,
+              "partner_on_map": true,
+              "self_atom": "NE2",
+              "partner_atom": "O",
+              "distance": 3.4,
+              "weight": 0.1,
+              "type": "mixed",
+              "sep": 1
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -1535,7 +2613,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 60
           },
           "pdb": {
             "id": "1CD8",
@@ -1545,7 +2623,38 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 2,
+          "hbond_count": 2,
+          "backbone_count": 1,
+          "sidechain_count": 0,
+          "mixed_count": 1,
+          "weight_total": 0.3,
+          "bonds": [
+            {
+              "partner_pdb": 41,
+              "partner_uniprot": 62,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 3.3,
+              "weight": 0.2,
+              "type": "backbone",
+              "sep": 2
+            },
+            {
+              "partner_pdb": 38,
+              "partner_uniprot": 59,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "NE2",
+              "distance": 3.4,
+              "weight": 0.1,
+              "type": "mixed",
+              "sep": 1
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -1575,7 +2684,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 61
           },
           "pdb": {
             "id": "1CD8",
@@ -1585,7 +2694,15 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 0,
+          "hbond_count": 0,
+          "backbone_count": 0,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 0,
+          "bonds": []
+        },
         "5_comparative": {}
       }
     },
@@ -1615,7 +2732,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 62
           },
           "pdb": {
             "id": "1CD8",
@@ -1625,7 +2742,49 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 3,
+          "hbond_count": 3,
+          "backbone_count": 3,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 0.8,
+          "bonds": [
+            {
+              "partner_pdb": 43,
+              "partner_uniprot": 64,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 3.2,
+              "weight": 0.3,
+              "type": "backbone",
+              "sep": 2
+            },
+            {
+              "partner_pdb": 44,
+              "partner_uniprot": 65,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 3.2,
+              "weight": 0.3,
+              "type": "backbone",
+              "sep": 3
+            },
+            {
+              "partner_pdb": 39,
+              "partner_uniprot": 60,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 3.3,
+              "weight": 0.2,
+              "type": "backbone",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -1655,7 +2814,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 64
           },
           "pdb": {
             "id": "1CD8",
@@ -1665,7 +2824,38 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 2,
+          "hbond_count": 2,
+          "backbone_count": 2,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 0.3,
+          "bonds": [
+            {
+              "partner_pdb": 41,
+              "partner_uniprot": 62,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 3.2,
+              "weight": 0.3,
+              "type": "backbone",
+              "sep": 2
+            },
+            {
+              "partner_pdb": 45,
+              "partner_uniprot": 66,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 3.7,
+              "weight": 0.0,
+              "type": "backbone",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -1695,7 +2885,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 65
           },
           "pdb": {
             "id": "1CD8",
@@ -1705,7 +2895,38 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 2,
+          "hbond_count": 2,
+          "backbone_count": 1,
+          "sidechain_count": 0,
+          "mixed_count": 1,
+          "weight_total": 1.0,
+          "bonds": [
+            {
+              "partner_pdb": 38,
+              "partner_uniprot": 59,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "NE2",
+              "distance": 2.8,
+              "weight": 0.7,
+              "type": "mixed",
+              "sep": 6
+            },
+            {
+              "partner_pdb": 41,
+              "partner_uniprot": 62,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 3.2,
+              "weight": 0.3,
+              "type": "backbone",
+              "sep": 3
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -1735,7 +2956,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 66
           },
           "pdb": {
             "id": "1CD8",
@@ -1745,7 +2966,38 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 2,
+          "hbond_count": 2,
+          "backbone_count": 2,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 0.0,
+          "bonds": [
+            {
+              "partner_pdb": 47,
+              "partner_uniprot": 68,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 3.5,
+              "weight": 0.0,
+              "type": "backbone",
+              "sep": 2
+            },
+            {
+              "partner_pdb": 43,
+              "partner_uniprot": 64,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 3.7,
+              "weight": 0.0,
+              "type": "backbone",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -1775,7 +3027,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 67
           },
           "pdb": {
             "id": "1CD8",
@@ -1785,7 +3037,15 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 0,
+          "hbond_count": 0,
+          "backbone_count": 0,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 0,
+          "bonds": []
+        },
         "5_comparative": {}
       }
     },
@@ -1815,7 +3075,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 68
           },
           "pdb": {
             "id": "1CD8",
@@ -1825,7 +3085,60 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 4,
+          "hbond_count": 4,
+          "backbone_count": 4,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 1.4,
+          "bonds": [
+            {
+              "partner_pdb": 37,
+              "partner_uniprot": 58,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 2.8,
+              "weight": 0.7,
+              "type": "backbone",
+              "sep": 10
+            },
+            {
+              "partner_pdb": 37,
+              "partner_uniprot": 58,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 2.8,
+              "weight": 0.7,
+              "type": "backbone",
+              "sep": 10
+            },
+            {
+              "partner_pdb": 45,
+              "partner_uniprot": 66,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 3.5,
+              "weight": 0.0,
+              "type": "backbone",
+              "sep": 2
+            },
+            {
+              "partner_pdb": 49,
+              "partner_uniprot": 70,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 3.7,
+              "weight": 0.0,
+              "type": "backbone",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -1855,7 +3168,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 69
           },
           "pdb": {
             "id": "1CD8",
@@ -1865,7 +3178,15 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 0,
+          "hbond_count": 0,
+          "backbone_count": 0,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 0,
+          "bonds": []
+        },
         "5_comparative": {}
       }
     },
@@ -1895,7 +3216,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 70
           },
           "pdb": {
             "id": "1CD8",
@@ -1905,7 +3226,49 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 3,
+          "hbond_count": 3,
+          "backbone_count": 3,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 1.3,
+          "bonds": [
+            {
+              "partner_pdb": 60,
+              "partner_uniprot": 81,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 2.8,
+              "weight": 0.7,
+              "type": "backbone",
+              "sep": 11
+            },
+            {
+              "partner_pdb": 35,
+              "partner_uniprot": 56,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 2.9,
+              "weight": 0.6,
+              "type": "backbone",
+              "sep": 14
+            },
+            {
+              "partner_pdb": 47,
+              "partner_uniprot": 68,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 3.7,
+              "weight": 0.0,
+              "type": "backbone",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -1935,7 +3298,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 71
           },
           "pdb": {
             "id": "1CD8",
@@ -1945,7 +3308,38 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 2,
+          "hbond_count": 2,
+          "backbone_count": 2,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 0.8,
+          "bonds": [
+            {
+              "partner_pdb": 35,
+              "partner_uniprot": 56,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 2.8,
+              "weight": 0.7,
+              "type": "backbone",
+              "sep": 15
+            },
+            {
+              "partner_pdb": 35,
+              "partner_uniprot": 56,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 3.4,
+              "weight": 0.1,
+              "type": "backbone",
+              "sep": 15
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -1975,7 +3369,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 72
           },
           "pdb": {
             "id": "1CD8",
@@ -1985,7 +3379,38 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 2,
+          "hbond_count": 2,
+          "backbone_count": 2,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 1.3,
+          "bonds": [
+            {
+              "partner_pdb": 58,
+              "partner_uniprot": 79,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 2.8,
+              "weight": 0.7,
+              "type": "backbone",
+              "sep": 7
+            },
+            {
+              "partner_pdb": 58,
+              "partner_uniprot": 79,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 2.9,
+              "weight": 0.6,
+              "type": "backbone",
+              "sep": 7
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -2015,7 +3440,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 73
           },
           "pdb": {
             "id": "1CD8",
@@ -2025,7 +3450,38 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 2,
+          "hbond_count": 2,
+          "backbone_count": 2,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 1.3,
+          "bonds": [
+            {
+              "partner_pdb": 33,
+              "partner_uniprot": 54,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 2.8,
+              "weight": 0.7,
+              "type": "backbone",
+              "sep": 19
+            },
+            {
+              "partner_pdb": 33,
+              "partner_uniprot": 54,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 2.9,
+              "weight": 0.6,
+              "type": "backbone",
+              "sep": 19
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -2055,7 +3511,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 74
           },
           "pdb": {
             "id": "1CD8",
@@ -2065,7 +3521,49 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 3,
+          "hbond_count": 3,
+          "backbone_count": 1,
+          "sidechain_count": 0,
+          "mixed_count": 2,
+          "weight_total": 0.3,
+          "bonds": [
+            {
+              "partner_pdb": 55,
+              "partner_uniprot": 76,
+              "partner_on_map": true,
+              "self_atom": "OG",
+              "partner_atom": "N",
+              "distance": 3.2,
+              "weight": 0.3,
+              "type": "mixed",
+              "sep": 2
+            },
+            {
+              "partner_pdb": 55,
+              "partner_uniprot": 76,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 3.5,
+              "weight": 0.0,
+              "type": "backbone",
+              "sep": 2
+            },
+            {
+              "partner_pdb": 55,
+              "partner_uniprot": 76,
+              "partner_on_map": true,
+              "self_atom": "OG",
+              "partner_atom": "O",
+              "distance": 3.7,
+              "weight": 0.0,
+              "type": "mixed",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -2095,7 +3593,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 75
           },
           "pdb": {
             "id": "1CD8",
@@ -2105,7 +3603,27 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 1,
+          "hbond_count": 1,
+          "backbone_count": 1,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 0.0,
+          "bonds": [
+            {
+              "partner_pdb": 31,
+              "partner_uniprot": 52,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 3.6,
+              "weight": 0.0,
+              "type": "backbone",
+              "sep": 23
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -2135,7 +3653,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 76
           },
           "pdb": {
             "id": "1CD8",
@@ -2145,7 +3663,60 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 4,
+          "hbond_count": 4,
+          "backbone_count": 2,
+          "sidechain_count": 0,
+          "mixed_count": 2,
+          "weight_total": 0.3,
+          "bonds": [
+            {
+              "partner_pdb": 53,
+              "partner_uniprot": 74,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "OG",
+              "distance": 3.2,
+              "weight": 0.3,
+              "type": "mixed",
+              "sep": 2
+            },
+            {
+              "partner_pdb": 53,
+              "partner_uniprot": 74,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 3.5,
+              "weight": 0.0,
+              "type": "backbone",
+              "sep": 2
+            },
+            {
+              "partner_pdb": 57,
+              "partner_uniprot": 78,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 3.5,
+              "weight": 0.0,
+              "type": "backbone",
+              "sep": 2
+            },
+            {
+              "partner_pdb": 53,
+              "partner_uniprot": 74,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "OG",
+              "distance": 3.7,
+              "weight": 0.0,
+              "type": "mixed",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -2175,7 +3746,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 77
           },
           "pdb": {
             "id": "1CD8",
@@ -2185,7 +3756,27 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 1,
+          "hbond_count": 1,
+          "backbone_count": 1,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 0.1,
+          "bonds": [
+            {
+              "partner_pdb": 58,
+              "partner_uniprot": 79,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 3.4,
+              "weight": 0.1,
+              "type": "backbone",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -2215,7 +3806,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 78
           },
           "pdb": {
             "id": "1CD8",
@@ -2225,7 +3816,27 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 1,
+          "hbond_count": 1,
+          "backbone_count": 1,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 0.0,
+          "bonds": [
+            {
+              "partner_pdb": 55,
+              "partner_uniprot": 76,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 3.5,
+              "weight": 0.0,
+              "type": "backbone",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -2255,7 +3866,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 79
           },
           "pdb": {
             "id": "1CD8",
@@ -2265,7 +3876,49 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 3,
+          "hbond_count": 3,
+          "backbone_count": 3,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 1.4,
+          "bonds": [
+            {
+              "partner_pdb": 51,
+              "partner_uniprot": 72,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 2.8,
+              "weight": 0.7,
+              "type": "backbone",
+              "sep": 7
+            },
+            {
+              "partner_pdb": 51,
+              "partner_uniprot": 72,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 2.9,
+              "weight": 0.6,
+              "type": "backbone",
+              "sep": 7
+            },
+            {
+              "partner_pdb": 56,
+              "partner_uniprot": 77,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 3.4,
+              "weight": 0.1,
+              "type": "backbone",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -2295,7 +3948,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 80
           },
           "pdb": {
             "id": "1CD8",
@@ -2305,7 +3958,15 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 0,
+          "hbond_count": 0,
+          "backbone_count": 0,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 0,
+          "bonds": []
+        },
         "5_comparative": {}
       }
     },
@@ -2335,7 +3996,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 81
           },
           "pdb": {
             "id": "1CD8",
@@ -2345,7 +4006,49 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 3,
+          "hbond_count": 3,
+          "backbone_count": 3,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 1.2,
+          "bonds": [
+            {
+              "partner_pdb": 49,
+              "partner_uniprot": 70,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 2.8,
+              "weight": 0.7,
+              "type": "backbone",
+              "sep": 11
+            },
+            {
+              "partner_pdb": 63,
+              "partner_uniprot": 84,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 3.1,
+              "weight": 0.4,
+              "type": "backbone",
+              "sep": 3
+            },
+            {
+              "partner_pdb": 62,
+              "partner_uniprot": 83,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 3.4,
+              "weight": 0.1,
+              "type": "backbone",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -2375,7 +4078,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 82
           },
           "pdb": {
             "id": "1CD8",
@@ -2385,7 +4088,27 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 1,
+          "hbond_count": 1,
+          "backbone_count": 1,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 0.2,
+          "bonds": [
+            {
+              "partner_pdb": 63,
+              "partner_uniprot": 84,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 3.3,
+              "weight": 0.2,
+              "type": "backbone",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -2415,7 +4138,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 83
           },
           "pdb": {
             "id": "1CD8",
@@ -2425,7 +4148,38 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 2,
+          "hbond_count": 2,
+          "backbone_count": 2,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 0.1,
+          "bonds": [
+            {
+              "partner_pdb": 60,
+              "partner_uniprot": 81,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 3.4,
+              "weight": 0.1,
+              "type": "backbone",
+              "sep": 2
+            },
+            {
+              "partner_pdb": null,
+              "partner_uniprot": 85,
+              "partner_on_map": false,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 3.5,
+              "weight": 0.0,
+              "type": "backbone",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -2455,7 +4209,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 84
           },
           "pdb": {
             "id": "1CD8",
@@ -2465,7 +4219,49 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 3,
+          "hbond_count": 3,
+          "backbone_count": 3,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 1.1,
+          "bonds": [
+            {
+              "partner_pdb": 65,
+              "partner_uniprot": 86,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 3.0,
+              "weight": 0.5,
+              "type": "backbone",
+              "sep": 2
+            },
+            {
+              "partner_pdb": 60,
+              "partner_uniprot": 81,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 3.1,
+              "weight": 0.4,
+              "type": "backbone",
+              "sep": 3
+            },
+            {
+              "partner_pdb": 61,
+              "partner_uniprot": 82,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 3.3,
+              "weight": 0.2,
+              "type": "backbone",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -2495,7 +4291,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 86
           },
           "pdb": {
             "id": "1CD8",
@@ -2505,7 +4301,27 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 1,
+          "hbond_count": 1,
+          "backbone_count": 1,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 0.5,
+          "bonds": [
+            {
+              "partner_pdb": 63,
+              "partner_uniprot": 84,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 3.0,
+              "weight": 0.5,
+              "type": "backbone",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -2535,7 +4351,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 87
           },
           "pdb": {
             "id": "1CD8",
@@ -2545,7 +4361,38 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 2,
+          "hbond_count": 2,
+          "backbone_count": 1,
+          "sidechain_count": 0,
+          "mixed_count": 1,
+          "weight_total": 0.2,
+          "bonds": [
+            {
+              "partner_pdb": null,
+              "partner_uniprot": 85,
+              "partner_on_map": false,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 3.4,
+              "weight": 0.1,
+              "type": "backbone",
+              "sep": 2
+            },
+            {
+              "partner_pdb": 82,
+              "partner_uniprot": 103,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "OG",
+              "distance": 3.4,
+              "weight": 0.1,
+              "type": "mixed",
+              "sep": 16
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -2575,7 +4422,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 88
           },
           "pdb": {
             "id": "1CD8",
@@ -2585,7 +4432,71 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 5,
+          "hbond_count": 5,
+          "backbone_count": 2,
+          "sidechain_count": 2,
+          "mixed_count": 1,
+          "weight_total": 1.7,
+          "bonds": [
+            {
+              "partner_pdb": null,
+              "partner_uniprot": 85,
+              "partner_on_map": false,
+              "self_atom": "NE",
+              "partner_atom": "OD2",
+              "distance": 2.7,
+              "weight": 0.8,
+              "type": "sidechain",
+              "sep": 3
+            },
+            {
+              "partner_pdb": 82,
+              "partner_uniprot": 103,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 3.0,
+              "weight": 0.5,
+              "type": "backbone",
+              "sep": 15
+            },
+            {
+              "partner_pdb": null,
+              "partner_uniprot": 85,
+              "partner_on_map": false,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 3.3,
+              "weight": 0.2,
+              "type": "backbone",
+              "sep": 3
+            },
+            {
+              "partner_pdb": null,
+              "partner_uniprot": 85,
+              "partner_on_map": false,
+              "self_atom": "N",
+              "partner_atom": "OD1",
+              "distance": 3.3,
+              "weight": 0.2,
+              "type": "mixed",
+              "sep": 3
+            },
+            {
+              "partner_pdb": null,
+              "partner_uniprot": 85,
+              "partner_on_map": false,
+              "self_atom": "NH2",
+              "partner_atom": "OD2",
+              "distance": 3.6,
+              "weight": 0.0,
+              "type": "sidechain",
+              "sep": 3
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -2615,7 +4526,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 89
           },
           "pdb": {
             "id": "1CD8",
@@ -2625,7 +4536,27 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 1,
+          "hbond_count": 1,
+          "backbone_count": 1,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 0.7,
+          "bonds": [
+            {
+              "partner_pdb": null,
+              "partner_uniprot": 85,
+              "partner_on_map": false,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 2.8,
+              "weight": 0.7,
+              "type": "backbone",
+              "sep": 4
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -2655,7 +4586,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 90
           },
           "pdb": {
             "id": "1CD8",
@@ -2665,7 +4596,49 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 3,
+          "hbond_count": 3,
+          "backbone_count": 2,
+          "sidechain_count": 0,
+          "mixed_count": 1,
+          "weight_total": 1.3,
+          "bonds": [
+            {
+              "partner_pdb": 80,
+              "partner_uniprot": 101,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 2.8,
+              "weight": 0.7,
+              "type": "backbone",
+              "sep": 11
+            },
+            {
+              "partner_pdb": 80,
+              "partner_uniprot": 101,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 2.9,
+              "weight": 0.6,
+              "type": "backbone",
+              "sep": 11
+            },
+            {
+              "partner_pdb": 80,
+              "partner_uniprot": 101,
+              "partner_on_map": true,
+              "self_atom": "OG",
+              "partner_atom": "O",
+              "distance": 3.6,
+              "weight": 0.0,
+              "type": "mixed",
+              "sep": 11
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -2695,7 +4668,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 91
           },
           "pdb": {
             "id": "1CD8",
@@ -2705,7 +4678,15 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 0,
+          "hbond_count": 0,
+          "backbone_count": 0,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 0,
+          "bonds": []
+        },
         "5_comparative": {}
       }
     },
@@ -2735,7 +4716,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 92
           },
           "pdb": {
             "id": "1CD8",
@@ -2745,7 +4726,38 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 2,
+          "hbond_count": 2,
+          "backbone_count": 2,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 1.3,
+          "bonds": [
+            {
+              "partner_pdb": 78,
+              "partner_uniprot": 99,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 2.8,
+              "weight": 0.7,
+              "type": "backbone",
+              "sep": 7
+            },
+            {
+              "partner_pdb": 78,
+              "partner_uniprot": 99,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 2.9,
+              "weight": 0.6,
+              "type": "backbone",
+              "sep": 7
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -2775,7 +4787,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 93
           },
           "pdb": {
             "id": "1CD8",
@@ -2785,7 +4797,27 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 1,
+          "hbond_count": 1,
+          "backbone_count": 0,
+          "sidechain_count": 0,
+          "mixed_count": 1,
+          "weight_total": 0.0,
+          "bonds": [
+            {
+              "partner_pdb": 74,
+              "partner_uniprot": 95,
+              "partner_on_map": true,
+              "self_atom": "NH2",
+              "partner_atom": "O",
+              "distance": 3.5,
+              "weight": 0.0,
+              "type": "mixed",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -2815,7 +4847,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 94
           },
           "pdb": {
             "id": "1CD8",
@@ -2825,7 +4857,49 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 3,
+          "hbond_count": 3,
+          "backbone_count": 3,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 1.6,
+          "bonds": [
+            {
+              "partner_pdb": 76,
+              "partner_uniprot": 97,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 2.8,
+              "weight": 0.7,
+              "type": "backbone",
+              "sep": 3
+            },
+            {
+              "partner_pdb": 76,
+              "partner_uniprot": 97,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 2.9,
+              "weight": 0.6,
+              "type": "backbone",
+              "sep": 3
+            },
+            {
+              "partner_pdb": 75,
+              "partner_uniprot": 96,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 3.2,
+              "weight": 0.3,
+              "type": "backbone",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -2855,7 +4929,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 95
           },
           "pdb": {
             "id": "1CD8",
@@ -2865,7 +4939,38 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 2,
+          "hbond_count": 2,
+          "backbone_count": 1,
+          "sidechain_count": 0,
+          "mixed_count": 1,
+          "weight_total": 0.0,
+          "bonds": [
+            {
+              "partner_pdb": 72,
+              "partner_uniprot": 93,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "NH2",
+              "distance": 3.5,
+              "weight": 0.0,
+              "type": "mixed",
+              "sep": 2
+            },
+            {
+              "partner_pdb": 76,
+              "partner_uniprot": 97,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 3.7,
+              "weight": 0.0,
+              "type": "backbone",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -2895,7 +5000,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 96
           },
           "pdb": {
             "id": "1CD8",
@@ -2905,7 +5010,38 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 2,
+          "hbond_count": 2,
+          "backbone_count": 2,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 0.9,
+          "bonds": [
+            {
+              "partner_pdb": 24,
+              "partner_uniprot": 45,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 2.9,
+              "weight": 0.6,
+              "type": "backbone",
+              "sep": 51
+            },
+            {
+              "partner_pdb": 73,
+              "partner_uniprot": 94,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 3.2,
+              "weight": 0.3,
+              "type": "backbone",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -2935,7 +5071,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 97
           },
           "pdb": {
             "id": "1CD8",
@@ -2945,7 +5081,49 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 3,
+          "hbond_count": 3,
+          "backbone_count": 3,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 1.3,
+          "bonds": [
+            {
+              "partner_pdb": 73,
+              "partner_uniprot": 94,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 2.8,
+              "weight": 0.7,
+              "type": "backbone",
+              "sep": 3
+            },
+            {
+              "partner_pdb": 73,
+              "partner_uniprot": 94,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 2.9,
+              "weight": 0.6,
+              "type": "backbone",
+              "sep": 3
+            },
+            {
+              "partner_pdb": 74,
+              "partner_uniprot": 95,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 3.7,
+              "weight": 0.0,
+              "type": "backbone",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -2975,7 +5153,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 98
           },
           "pdb": {
             "id": "1CD8",
@@ -2985,7 +5163,38 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 2,
+          "hbond_count": 2,
+          "backbone_count": 2,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 1.3,
+          "bonds": [
+            {
+              "partner_pdb": 22,
+              "partner_uniprot": 43,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 2.8,
+              "weight": 0.7,
+              "type": "backbone",
+              "sep": 55
+            },
+            {
+              "partner_pdb": 22,
+              "partner_uniprot": 43,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 2.9,
+              "weight": 0.6,
+              "type": "backbone",
+              "sep": 55
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -3015,7 +5224,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 99
           },
           "pdb": {
             "id": "1CD8",
@@ -3025,7 +5234,38 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 2,
+          "hbond_count": 2,
+          "backbone_count": 2,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 1.3,
+          "bonds": [
+            {
+              "partner_pdb": 71,
+              "partner_uniprot": 92,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 2.8,
+              "weight": 0.7,
+              "type": "backbone",
+              "sep": 7
+            },
+            {
+              "partner_pdb": 71,
+              "partner_uniprot": 92,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 2.9,
+              "weight": 0.6,
+              "type": "backbone",
+              "sep": 7
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -3055,7 +5295,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 100
           },
           "pdb": {
             "id": "1CD8",
@@ -3065,7 +5305,49 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 3,
+          "hbond_count": 3,
+          "backbone_count": 2,
+          "sidechain_count": 0,
+          "mixed_count": 1,
+          "weight_total": 1.3,
+          "bonds": [
+            {
+              "partner_pdb": 20,
+              "partner_uniprot": 41,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 2.8,
+              "weight": 0.7,
+              "type": "backbone",
+              "sep": 59
+            },
+            {
+              "partner_pdb": 20,
+              "partner_uniprot": 41,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 2.9,
+              "weight": 0.6,
+              "type": "backbone",
+              "sep": 59
+            },
+            {
+              "partner_pdb": 80,
+              "partner_uniprot": 101,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "OG1",
+              "distance": 3.6,
+              "weight": 0.0,
+              "type": "mixed",
+              "sep": 1
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -3095,7 +5377,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 101
           },
           "pdb": {
             "id": "1CD8",
@@ -3105,7 +5387,60 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 4,
+          "hbond_count": 4,
+          "backbone_count": 2,
+          "sidechain_count": 0,
+          "mixed_count": 2,
+          "weight_total": 1.3,
+          "bonds": [
+            {
+              "partner_pdb": 69,
+              "partner_uniprot": 90,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 2.8,
+              "weight": 0.7,
+              "type": "backbone",
+              "sep": 11
+            },
+            {
+              "partner_pdb": 69,
+              "partner_uniprot": 90,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 2.9,
+              "weight": 0.6,
+              "type": "backbone",
+              "sep": 11
+            },
+            {
+              "partner_pdb": 69,
+              "partner_uniprot": 90,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "OG",
+              "distance": 3.6,
+              "weight": 0.0,
+              "type": "mixed",
+              "sep": 11
+            },
+            {
+              "partner_pdb": 79,
+              "partner_uniprot": 100,
+              "partner_on_map": true,
+              "self_atom": "OG1",
+              "partner_atom": "O",
+              "distance": 3.6,
+              "weight": 0.0,
+              "type": "mixed",
+              "sep": 1
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -3135,7 +5470,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 102
           },
           "pdb": {
             "id": "1CD8",
@@ -3145,7 +5480,49 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 3,
+          "hbond_count": 3,
+          "backbone_count": 3,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 1.4,
+          "bonds": [
+            {
+              "partner_pdb": 18,
+              "partner_uniprot": 39,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 2.8,
+              "weight": 0.7,
+              "type": "backbone",
+              "sep": 63
+            },
+            {
+              "partner_pdb": 18,
+              "partner_uniprot": 39,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 2.8,
+              "weight": 0.7,
+              "type": "backbone",
+              "sep": 63
+            },
+            {
+              "partner_pdb": 83,
+              "partner_uniprot": 104,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 3.6,
+              "weight": 0.0,
+              "type": "backbone",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -3175,7 +5552,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 103
           },
           "pdb": {
             "id": "1CD8",
@@ -3185,7 +5562,49 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 3,
+          "hbond_count": 3,
+          "backbone_count": 1,
+          "sidechain_count": 0,
+          "mixed_count": 2,
+          "weight_total": 0.9,
+          "bonds": [
+            {
+              "partner_pdb": 67,
+              "partner_uniprot": 88,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 3.0,
+              "weight": 0.5,
+              "type": "backbone",
+              "sep": 15
+            },
+            {
+              "partner_pdb": 17,
+              "partner_uniprot": 38,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "OG1",
+              "distance": 3.2,
+              "weight": 0.3,
+              "type": "mixed",
+              "sep": 65
+            },
+            {
+              "partner_pdb": 66,
+              "partner_uniprot": 87,
+              "partner_on_map": true,
+              "self_atom": "OG",
+              "partner_atom": "O",
+              "distance": 3.4,
+              "weight": 0.1,
+              "type": "mixed",
+              "sep": 16
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -3215,7 +5634,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 104
           },
           "pdb": {
             "id": "1CD8",
@@ -3225,7 +5644,49 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 3,
+          "hbond_count": 3,
+          "backbone_count": 2,
+          "sidechain_count": 1,
+          "mixed_count": 0,
+          "weight_total": 0.8,
+          "bonds": [
+            {
+              "partner_pdb": 85,
+              "partner_uniprot": 106,
+              "partner_on_map": true,
+              "self_atom": "OD2",
+              "partner_atom": "NE",
+              "distance": 2.8,
+              "weight": 0.7,
+              "type": "sidechain",
+              "sep": 2
+            },
+            {
+              "partner_pdb": 85,
+              "partner_uniprot": 106,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 3.4,
+              "weight": 0.1,
+              "type": "backbone",
+              "sep": 2
+            },
+            {
+              "partner_pdb": 81,
+              "partner_uniprot": 102,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 3.6,
+              "weight": 0.0,
+              "type": "backbone",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -3255,7 +5716,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 105
           },
           "pdb": {
             "id": "1CD8",
@@ -3265,7 +5726,38 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 2,
+          "hbond_count": 2,
+          "backbone_count": 2,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 1.1,
+          "bonds": [
+            {
+              "partner_pdb": 15,
+              "partner_uniprot": 36,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 2.9,
+              "weight": 0.6,
+              "type": "backbone",
+              "sep": 69
+            },
+            {
+              "partner_pdb": 16,
+              "partner_uniprot": 37,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 3.0,
+              "weight": 0.5,
+              "type": "backbone",
+              "sep": 68
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -3295,7 +5787,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 106
           },
           "pdb": {
             "id": "1CD8",
@@ -3305,7 +5797,82 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 6,
+          "hbond_count": 6,
+          "backbone_count": 4,
+          "sidechain_count": 1,
+          "mixed_count": 1,
+          "weight_total": 1.9,
+          "bonds": [
+            {
+              "partner_pdb": 83,
+              "partner_uniprot": 104,
+              "partner_on_map": true,
+              "self_atom": "NE",
+              "partner_atom": "OD2",
+              "distance": 2.8,
+              "weight": 0.7,
+              "type": "sidechain",
+              "sep": 2
+            },
+            {
+              "partner_pdb": 88,
+              "partner_uniprot": 109,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 2.9,
+              "weight": 0.6,
+              "type": "backbone",
+              "sep": 3
+            },
+            {
+              "partner_pdb": 88,
+              "partner_uniprot": 109,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "OD1",
+              "distance": 3.2,
+              "weight": 0.3,
+              "type": "mixed",
+              "sep": 3
+            },
+            {
+              "partner_pdb": 87,
+              "partner_uniprot": 108,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 3.3,
+              "weight": 0.2,
+              "type": "backbone",
+              "sep": 2
+            },
+            {
+              "partner_pdb": 83,
+              "partner_uniprot": 104,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 3.4,
+              "weight": 0.1,
+              "type": "backbone",
+              "sep": 2
+            },
+            {
+              "partner_pdb": 89,
+              "partner_uniprot": 110,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 3.7,
+              "weight": 0.0,
+              "type": "backbone",
+              "sep": 4
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -3335,7 +5902,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 107
           },
           "pdb": {
             "id": "1CD8",
@@ -3345,7 +5912,38 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 2,
+          "hbond_count": 2,
+          "backbone_count": 2,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 0.6,
+          "bonds": [
+            {
+              "partner_pdb": 88,
+              "partner_uniprot": 109,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 3.2,
+              "weight": 0.3,
+              "type": "backbone",
+              "sep": 2
+            },
+            {
+              "partner_pdb": 89,
+              "partner_uniprot": 110,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 3.2,
+              "weight": 0.3,
+              "type": "backbone",
+              "sep": 3
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -3375,7 +5973,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 108
           },
           "pdb": {
             "id": "1CD8",
@@ -3385,7 +5983,38 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 2,
+          "hbond_count": 2,
+          "backbone_count": 2,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 0.2,
+          "bonds": [
+            {
+              "partner_pdb": 85,
+              "partner_uniprot": 106,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 3.3,
+              "weight": 0.2,
+              "type": "backbone",
+              "sep": 2
+            },
+            {
+              "partner_pdb": 89,
+              "partner_uniprot": 110,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 3.7,
+              "weight": 0.0,
+              "type": "backbone",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -3415,7 +6044,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 109
           },
           "pdb": {
             "id": "1CD8",
@@ -3425,7 +6054,71 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 5,
+          "hbond_count": 5,
+          "backbone_count": 3,
+          "sidechain_count": 0,
+          "mixed_count": 2,
+          "weight_total": 1.9,
+          "bonds": [
+            {
+              "partner_pdb": 92,
+              "partner_uniprot": 113,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "OH",
+              "distance": 2.8,
+              "weight": 0.7,
+              "type": "mixed",
+              "sep": 4
+            },
+            {
+              "partner_pdb": 85,
+              "partner_uniprot": 106,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 2.9,
+              "weight": 0.6,
+              "type": "backbone",
+              "sep": 3
+            },
+            {
+              "partner_pdb": 85,
+              "partner_uniprot": 106,
+              "partner_on_map": true,
+              "self_atom": "OD1",
+              "partner_atom": "N",
+              "distance": 3.2,
+              "weight": 0.3,
+              "type": "mixed",
+              "sep": 3
+            },
+            {
+              "partner_pdb": 86,
+              "partner_uniprot": 107,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 3.2,
+              "weight": 0.3,
+              "type": "backbone",
+              "sep": 2
+            },
+            {
+              "partner_pdb": 90,
+              "partner_uniprot": 111,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 3.5,
+              "weight": 0.0,
+              "type": "backbone",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -3455,7 +6148,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 110
           },
           "pdb": {
             "id": "1CD8",
@@ -3465,7 +6158,49 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 3,
+          "hbond_count": 3,
+          "backbone_count": 3,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 0.3,
+          "bonds": [
+            {
+              "partner_pdb": 86,
+              "partner_uniprot": 107,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 3.2,
+              "weight": 0.3,
+              "type": "backbone",
+              "sep": 3
+            },
+            {
+              "partner_pdb": 85,
+              "partner_uniprot": 106,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 3.7,
+              "weight": 0.0,
+              "type": "backbone",
+              "sep": 4
+            },
+            {
+              "partner_pdb": 87,
+              "partner_uniprot": 108,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 3.7,
+              "weight": 0.0,
+              "type": "backbone",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -3495,7 +6230,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 111
           },
           "pdb": {
             "id": "1CD8",
@@ -3505,7 +6240,49 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 3,
+          "hbond_count": 3,
+          "backbone_count": 3,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 1.1,
+          "bonds": [
+            {
+              "partner_pdb": 110,
+              "partner_uniprot": 131,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 2.9,
+              "weight": 0.6,
+              "type": "backbone",
+              "sep": 20
+            },
+            {
+              "partner_pdb": 110,
+              "partner_uniprot": 131,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 3.0,
+              "weight": 0.5,
+              "type": "backbone",
+              "sep": 20
+            },
+            {
+              "partner_pdb": 88,
+              "partner_uniprot": 109,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 3.5,
+              "weight": 0.0,
+              "type": "backbone",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -3535,7 +6312,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 112
           },
           "pdb": {
             "id": "1CD8",
@@ -3545,7 +6322,38 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 2,
+          "hbond_count": 2,
+          "backbone_count": 2,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 1.3,
+          "bonds": [
+            {
+              "partner_pdb": 38,
+              "partner_uniprot": 59,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 2.8,
+              "weight": 0.7,
+              "type": "backbone",
+              "sep": 53
+            },
+            {
+              "partner_pdb": 38,
+              "partner_uniprot": 59,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 2.9,
+              "weight": 0.6,
+              "type": "backbone",
+              "sep": 53
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -3575,7 +6383,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 113
           },
           "pdb": {
             "id": "1CD8",
@@ -3585,7 +6393,49 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 3,
+          "hbond_count": 3,
+          "backbone_count": 2,
+          "sidechain_count": 0,
+          "mixed_count": 1,
+          "weight_total": 2.0,
+          "bonds": [
+            {
+              "partner_pdb": 88,
+              "partner_uniprot": 109,
+              "partner_on_map": true,
+              "self_atom": "OH",
+              "partner_atom": "O",
+              "distance": 2.8,
+              "weight": 0.7,
+              "type": "mixed",
+              "sep": 4
+            },
+            {
+              "partner_pdb": 108,
+              "partner_uniprot": 129,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 2.8,
+              "weight": 0.7,
+              "type": "backbone",
+              "sep": 16
+            },
+            {
+              "partner_pdb": 108,
+              "partner_uniprot": 129,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 2.9,
+              "weight": 0.6,
+              "type": "backbone",
+              "sep": 16
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -3615,7 +6465,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 114
           },
           "pdb": {
             "id": "1CD8",
@@ -3625,7 +6475,38 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 2,
+          "hbond_count": 2,
+          "backbone_count": 2,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 1.2,
+          "bonds": [
+            {
+              "partner_pdb": 36,
+              "partner_uniprot": 57,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 2.8,
+              "weight": 0.7,
+              "type": "backbone",
+              "sep": 57
+            },
+            {
+              "partner_pdb": 36,
+              "partner_uniprot": 57,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 3.0,
+              "weight": 0.5,
+              "type": "backbone",
+              "sep": 57
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -3655,7 +6536,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 115
           },
           "pdb": {
             "id": "1CD8",
@@ -3665,7 +6546,38 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 2,
+          "hbond_count": 2,
+          "backbone_count": 1,
+          "sidechain_count": 0,
+          "mixed_count": 1,
+          "weight_total": 1.2,
+          "bonds": [
+            {
+              "partner_pdb": 105,
+              "partner_uniprot": 126,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "OG",
+              "distance": 2.9,
+              "weight": 0.6,
+              "type": "mixed",
+              "sep": 11
+            },
+            {
+              "partner_pdb": 105,
+              "partner_uniprot": 126,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 2.9,
+              "weight": 0.6,
+              "type": "backbone",
+              "sep": 11
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -3695,7 +6607,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 116
           },
           "pdb": {
             "id": "1CD8",
@@ -3705,7 +6617,38 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 2,
+          "hbond_count": 2,
+          "backbone_count": 2,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 1.3,
+          "bonds": [
+            {
+              "partner_pdb": 34,
+              "partner_uniprot": 55,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 2.8,
+              "weight": 0.7,
+              "type": "backbone",
+              "sep": 61
+            },
+            {
+              "partner_pdb": 34,
+              "partner_uniprot": 55,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 2.9,
+              "weight": 0.6,
+              "type": "backbone",
+              "sep": 61
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -3735,7 +6678,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 117
           },
           "pdb": {
             "id": "1CD8",
@@ -3745,7 +6688,38 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 2,
+          "hbond_count": 2,
+          "backbone_count": 2,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 1.1,
+          "bonds": [
+            {
+              "partner_pdb": 103,
+              "partner_uniprot": 124,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 2.9,
+              "weight": 0.6,
+              "type": "backbone",
+              "sep": 7
+            },
+            {
+              "partner_pdb": 103,
+              "partner_uniprot": 124,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 3.0,
+              "weight": 0.5,
+              "type": "backbone",
+              "sep": 7
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -3775,7 +6749,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 118
           },
           "pdb": {
             "id": "1CD8",
@@ -3785,7 +6759,27 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 1,
+          "hbond_count": 1,
+          "backbone_count": 1,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 0.6,
+          "bonds": [
+            {
+              "partner_pdb": 30,
+              "partner_uniprot": 51,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 2.9,
+              "weight": 0.6,
+              "type": "backbone",
+              "sep": 67
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -3815,7 +6809,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 119
           },
           "pdb": {
             "id": "1CD8",
@@ -3825,7 +6819,49 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 3,
+          "hbond_count": 3,
+          "backbone_count": 3,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 1.5,
+          "bonds": [
+            {
+              "partner_pdb": 101,
+              "partner_uniprot": 122,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 2.9,
+              "weight": 0.6,
+              "type": "backbone",
+              "sep": 3
+            },
+            {
+              "partner_pdb": 101,
+              "partner_uniprot": 122,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 2.9,
+              "weight": 0.6,
+              "type": "backbone",
+              "sep": 3
+            },
+            {
+              "partner_pdb": 100,
+              "partner_uniprot": 121,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 3.2,
+              "weight": 0.3,
+              "type": "backbone",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -3855,7 +6891,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 120
           },
           "pdb": {
             "id": "1CD8",
@@ -3865,7 +6901,27 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 1,
+          "hbond_count": 1,
+          "backbone_count": 1,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 0.4,
+          "bonds": [
+            {
+              "partner_pdb": 101,
+              "partner_uniprot": 122,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 3.1,
+              "weight": 0.4,
+              "type": "backbone",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -3895,7 +6951,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 121
           },
           "pdb": {
             "id": "1CD8",
@@ -3905,7 +6961,27 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 1,
+          "hbond_count": 1,
+          "backbone_count": 1,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 0.3,
+          "bonds": [
+            {
+              "partner_pdb": 98,
+              "partner_uniprot": 119,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 3.2,
+              "weight": 0.3,
+              "type": "backbone",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -3935,7 +7011,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 122
           },
           "pdb": {
             "id": "1CD8",
@@ -3945,7 +7021,60 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 4,
+          "hbond_count": 4,
+          "backbone_count": 4,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 1.6,
+          "bonds": [
+            {
+              "partner_pdb": 98,
+              "partner_uniprot": 119,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 2.9,
+              "weight": 0.6,
+              "type": "backbone",
+              "sep": 3
+            },
+            {
+              "partner_pdb": 98,
+              "partner_uniprot": 119,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 2.9,
+              "weight": 0.6,
+              "type": "backbone",
+              "sep": 3
+            },
+            {
+              "partner_pdb": 99,
+              "partner_uniprot": 120,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 3.1,
+              "weight": 0.4,
+              "type": "backbone",
+              "sep": 2
+            },
+            {
+              "partner_pdb": 103,
+              "partner_uniprot": 124,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 3.7,
+              "weight": 0.0,
+              "type": "backbone",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -3975,7 +7104,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 123
           },
           "pdb": {
             "id": "1CD8",
@@ -3985,7 +7114,15 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 0,
+          "hbond_count": 0,
+          "backbone_count": 0,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 0,
+          "bonds": []
+        },
         "5_comparative": {}
       }
     },
@@ -4015,7 +7152,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 124
           },
           "pdb": {
             "id": "1CD8",
@@ -4025,7 +7162,49 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 3,
+          "hbond_count": 3,
+          "backbone_count": 3,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 1.1,
+          "bonds": [
+            {
+              "partner_pdb": 96,
+              "partner_uniprot": 117,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 2.9,
+              "weight": 0.6,
+              "type": "backbone",
+              "sep": 7
+            },
+            {
+              "partner_pdb": 96,
+              "partner_uniprot": 117,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 3.0,
+              "weight": 0.5,
+              "type": "backbone",
+              "sep": 7
+            },
+            {
+              "partner_pdb": 101,
+              "partner_uniprot": 122,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 3.7,
+              "weight": 0.0,
+              "type": "backbone",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -4055,7 +7234,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 125
           },
           "pdb": {
             "id": "1CD8",
@@ -4065,7 +7244,15 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 0,
+          "hbond_count": 0,
+          "backbone_count": 0,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 0,
+          "bonds": []
+        },
         "5_comparative": {}
       }
     },
@@ -4095,7 +7282,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 126
           },
           "pdb": {
             "id": "1CD8",
@@ -4105,7 +7292,38 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 2,
+          "hbond_count": 2,
+          "backbone_count": 1,
+          "sidechain_count": 0,
+          "mixed_count": 1,
+          "weight_total": 1.2,
+          "bonds": [
+            {
+              "partner_pdb": 94,
+              "partner_uniprot": 115,
+              "partner_on_map": true,
+              "self_atom": "OG",
+              "partner_atom": "N",
+              "distance": 2.9,
+              "weight": 0.6,
+              "type": "mixed",
+              "sep": 11
+            },
+            {
+              "partner_pdb": 94,
+              "partner_uniprot": 115,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 2.9,
+              "weight": 0.6,
+              "type": "backbone",
+              "sep": 11
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -4135,7 +7353,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 127
           },
           "pdb": {
             "id": "1CD8",
@@ -4145,7 +7363,27 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 1,
+          "hbond_count": 1,
+          "backbone_count": 1,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 0.0,
+          "bonds": [
+            {
+              "partner_pdb": 108,
+              "partner_uniprot": 129,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 3.6,
+              "weight": 0.0,
+              "type": "backbone",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -4175,7 +7413,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 128
           },
           "pdb": {
             "id": "1CD8",
@@ -4185,7 +7423,15 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 0,
+          "hbond_count": 0,
+          "backbone_count": 0,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 0,
+          "bonds": []
+        },
         "5_comparative": {}
       }
     },
@@ -4215,7 +7461,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 129
           },
           "pdb": {
             "id": "1CD8",
@@ -4225,7 +7471,60 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 4,
+          "hbond_count": 4,
+          "backbone_count": 4,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 1.4,
+          "bonds": [
+            {
+              "partner_pdb": 92,
+              "partner_uniprot": 113,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 2.8,
+              "weight": 0.7,
+              "type": "backbone",
+              "sep": 16
+            },
+            {
+              "partner_pdb": 92,
+              "partner_uniprot": 113,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 2.9,
+              "weight": 0.6,
+              "type": "backbone",
+              "sep": 16
+            },
+            {
+              "partner_pdb": 110,
+              "partner_uniprot": 131,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 3.4,
+              "weight": 0.1,
+              "type": "backbone",
+              "sep": 2
+            },
+            {
+              "partner_pdb": 106,
+              "partner_uniprot": 127,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 3.6,
+              "weight": 0.0,
+              "type": "backbone",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -4255,7 +7554,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 130
           },
           "pdb": {
             "id": "1CD8",
@@ -4265,7 +7564,15 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 0,
+          "hbond_count": 0,
+          "backbone_count": 0,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 0,
+          "bonds": []
+        },
         "5_comparative": {}
       }
     },
@@ -4295,7 +7602,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 131
           },
           "pdb": {
             "id": "1CD8",
@@ -4305,7 +7612,49 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 3,
+          "hbond_count": 3,
+          "backbone_count": 3,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 1.2,
+          "bonds": [
+            {
+              "partner_pdb": 90,
+              "partner_uniprot": 111,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 2.9,
+              "weight": 0.6,
+              "type": "backbone",
+              "sep": 20
+            },
+            {
+              "partner_pdb": 90,
+              "partner_uniprot": 111,
+              "partner_on_map": true,
+              "self_atom": "O",
+              "partner_atom": "N",
+              "distance": 3.0,
+              "weight": 0.5,
+              "type": "backbone",
+              "sep": 20
+            },
+            {
+              "partner_pdb": 108,
+              "partner_uniprot": 129,
+              "partner_on_map": true,
+              "self_atom": "N",
+              "partner_atom": "O",
+              "distance": 3.4,
+              "weight": 0.1,
+              "type": "backbone",
+              "sep": 2
+            }
+          ]
+        },
         "5_comparative": {}
       }
     },
@@ -4335,7 +7684,7 @@
           },
           "uniprot": {
             "id": "P01732",
-            "pos": null
+            "pos": 132
           },
           "pdb": {
             "id": "1CD8",
@@ -4345,9 +7694,2020 @@
         },
         "2_intrinsic": {},
         "3_structural": {},
-        "4_interaction": {},
+        "4_interaction": {
+          "hbond_density": 0,
+          "hbond_count": 0,
+          "backbone_count": 0,
+          "sidechain_count": 0,
+          "mixed_count": 0,
+          "weight_total": 0,
+          "bonds": []
+        },
         "5_comparative": {}
       }
     }
-  ]
+  ],
+  "hbonds": {
+    "source": "icn3d_allinteraction",
+    "uniprot_offset": 21,
+    "unique_pairs_parsed": 113,
+    "edges_on_map": 105,
+    "edges": [
+      {
+        "a": {
+          "pdb": 4,
+          "uniprot": 25,
+          "atom": "N",
+          "aa": "R",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 23,
+          "uniprot": 44,
+          "atom": "O",
+          "aa": "Q",
+          "on_map": true
+        },
+        "distance": 2.9,
+        "weight": 0.6,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 4,
+          "uniprot": 25,
+          "atom": "O",
+          "aa": "R",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 23,
+          "uniprot": 44,
+          "atom": "N",
+          "aa": "Q",
+          "on_map": true
+        },
+        "distance": 2.8,
+        "weight": 0.7,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 6,
+          "uniprot": 27,
+          "atom": "N",
+          "aa": "S",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 21,
+          "uniprot": 42,
+          "atom": "O",
+          "aa": "K",
+          "on_map": true
+        },
+        "distance": 2.9,
+        "weight": 0.6,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 6,
+          "uniprot": 27,
+          "atom": "O",
+          "aa": "S",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 21,
+          "uniprot": 42,
+          "atom": "N",
+          "aa": "K",
+          "on_map": true
+        },
+        "distance": 2.8,
+        "weight": 0.7,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 10,
+          "uniprot": 31,
+          "atom": "NE",
+          "aa": "R",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 12,
+          "uniprot": 33,
+          "atom": "NE1",
+          "aa": "W",
+          "on_map": true
+        },
+        "distance": 3.7,
+        "weight": 0.0,
+        "type": "sidechain"
+      },
+      {
+        "a": {
+          "pdb": 13,
+          "uniprot": 34,
+          "atom": "N",
+          "aa": "N",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 16,
+          "uniprot": 37,
+          "atom": "OE2",
+          "aa": "E",
+          "on_map": true
+        },
+        "distance": 3.2,
+        "weight": 0.3,
+        "type": "mixed"
+      },
+      {
+        "a": {
+          "pdb": 13,
+          "uniprot": 34,
+          "atom": "O",
+          "aa": "N",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 15,
+          "uniprot": 36,
+          "atom": "N",
+          "aa": "G",
+          "on_map": true
+        },
+        "distance": 3.4,
+        "weight": 0.1,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 13,
+          "uniprot": 34,
+          "atom": "O",
+          "aa": "N",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 16,
+          "uniprot": 37,
+          "atom": "N",
+          "aa": "E",
+          "on_map": true
+        },
+        "distance": 3.1,
+        "weight": 0.4,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 13,
+          "uniprot": 34,
+          "atom": "ND2",
+          "aa": "N",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 16,
+          "uniprot": 37,
+          "atom": "OE1",
+          "aa": "E",
+          "on_map": true
+        },
+        "distance": 2.8,
+        "weight": 0.7,
+        "type": "sidechain"
+      },
+      {
+        "a": {
+          "pdb": 14,
+          "uniprot": 35,
+          "atom": "O",
+          "aa": "L",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 16,
+          "uniprot": 37,
+          "atom": "N",
+          "aa": "E",
+          "on_map": true
+        },
+        "distance": 3.4,
+        "weight": 0.1,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 15,
+          "uniprot": 36,
+          "atom": "N",
+          "aa": "G",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 84,
+          "uniprot": 105,
+          "atom": "O",
+          "aa": "F",
+          "on_map": true
+        },
+        "distance": 2.9,
+        "weight": 0.6,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 16,
+          "uniprot": 37,
+          "atom": "O",
+          "aa": "E",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 18,
+          "uniprot": 39,
+          "atom": "N",
+          "aa": "V",
+          "on_map": true
+        },
+        "distance": 3.6,
+        "weight": 0.0,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 16,
+          "uniprot": 37,
+          "atom": "O",
+          "aa": "E",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 84,
+          "uniprot": 105,
+          "atom": "N",
+          "aa": "F",
+          "on_map": true
+        },
+        "distance": 3.0,
+        "weight": 0.5,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 17,
+          "uniprot": 38,
+          "atom": "O",
+          "aa": "T",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 19,
+          "uniprot": 40,
+          "atom": "N",
+          "aa": "E",
+          "on_map": true
+        },
+        "distance": 3.8,
+        "weight": 0.0,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 17,
+          "uniprot": 38,
+          "atom": "OG1",
+          "aa": "T",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 82,
+          "uniprot": 103,
+          "atom": "O",
+          "aa": "S",
+          "on_map": true
+        },
+        "distance": 3.2,
+        "weight": 0.3,
+        "type": "mixed"
+      },
+      {
+        "a": {
+          "pdb": 18,
+          "uniprot": 39,
+          "atom": "N",
+          "aa": "V",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 81,
+          "uniprot": 102,
+          "atom": "O",
+          "aa": "L",
+          "on_map": true
+        },
+        "distance": 2.8,
+        "weight": 0.7,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 18,
+          "uniprot": 39,
+          "atom": "O",
+          "aa": "V",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 81,
+          "uniprot": 102,
+          "atom": "N",
+          "aa": "L",
+          "on_map": true
+        },
+        "distance": 2.8,
+        "weight": 0.7,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 20,
+          "uniprot": 41,
+          "atom": "N",
+          "aa": "L",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 79,
+          "uniprot": 100,
+          "atom": "O",
+          "aa": "L",
+          "on_map": true
+        },
+        "distance": 2.8,
+        "weight": 0.7,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 20,
+          "uniprot": 41,
+          "atom": "O",
+          "aa": "L",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 79,
+          "uniprot": 100,
+          "atom": "N",
+          "aa": "L",
+          "on_map": true
+        },
+        "distance": 2.9,
+        "weight": 0.6,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 22,
+          "uniprot": 43,
+          "atom": "N",
+          "aa": "C",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 77,
+          "uniprot": 98,
+          "atom": "O",
+          "aa": "F",
+          "on_map": true
+        },
+        "distance": 2.9,
+        "weight": 0.6,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 22,
+          "uniprot": 43,
+          "atom": "O",
+          "aa": "C",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 24,
+          "uniprot": 45,
+          "atom": "N",
+          "aa": "V",
+          "on_map": true
+        },
+        "distance": 3.8,
+        "weight": 0.0,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 22,
+          "uniprot": 43,
+          "atom": "O",
+          "aa": "C",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 77,
+          "uniprot": 98,
+          "atom": "N",
+          "aa": "F",
+          "on_map": true
+        },
+        "distance": 2.8,
+        "weight": 0.7,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 23,
+          "uniprot": 44,
+          "atom": "O",
+          "aa": "Q",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 25,
+          "uniprot": 46,
+          "atom": "N",
+          "aa": "L",
+          "on_map": true
+        },
+        "distance": 3.7,
+        "weight": 0.0,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 24,
+          "uniprot": 45,
+          "atom": "N",
+          "aa": "V",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 75,
+          "uniprot": 96,
+          "atom": "O",
+          "aa": "D",
+          "on_map": true
+        },
+        "distance": 2.9,
+        "weight": 0.6,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 25,
+          "uniprot": 46,
+          "atom": "O",
+          "aa": "L",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 27,
+          "uniprot": 48,
+          "atom": "N",
+          "aa": "S",
+          "on_map": true
+        },
+        "distance": 3.8,
+        "weight": 0.0,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 26,
+          "uniprot": 47,
+          "atom": "O",
+          "aa": "L",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 28,
+          "uniprot": 49,
+          "atom": "N",
+          "aa": "N",
+          "on_map": true
+        },
+        "distance": 3.6,
+        "weight": 0.0,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 27,
+          "uniprot": 48,
+          "atom": "O",
+          "aa": "S",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 29,
+          "uniprot": 50,
+          "atom": "N",
+          "aa": "P",
+          "on_map": true
+        },
+        "distance": 3.4,
+        "weight": 0.1,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 28,
+          "uniprot": 49,
+          "atom": "O",
+          "aa": "N",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 30,
+          "uniprot": 51,
+          "atom": "N",
+          "aa": "T",
+          "on_map": true
+        },
+        "distance": 3.5,
+        "weight": 0.0,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 29,
+          "uniprot": 50,
+          "atom": "O",
+          "aa": "P",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 31,
+          "uniprot": 52,
+          "atom": "N",
+          "aa": "S",
+          "on_map": true
+        },
+        "distance": 3.7,
+        "weight": 0.0,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 30,
+          "uniprot": 51,
+          "atom": "N",
+          "aa": "T",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 97,
+          "uniprot": 118,
+          "atom": "O",
+          "aa": "L",
+          "on_map": true
+        },
+        "distance": 2.9,
+        "weight": 0.6,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 30,
+          "uniprot": 51,
+          "atom": "O",
+          "aa": "T",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 32,
+          "uniprot": 53,
+          "atom": "N",
+          "aa": "G",
+          "on_map": true
+        },
+        "distance": 2.7,
+        "weight": 0.8,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 31,
+          "uniprot": 52,
+          "atom": "O",
+          "aa": "S",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 54,
+          "uniprot": 75,
+          "atom": "N",
+          "aa": "Q",
+          "on_map": true
+        },
+        "distance": 3.6,
+        "weight": 0.0,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 33,
+          "uniprot": 54,
+          "atom": "N",
+          "aa": "C",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 52,
+          "uniprot": 73,
+          "atom": "O",
+          "aa": "L",
+          "on_map": true
+        },
+        "distance": 2.9,
+        "weight": 0.6,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 33,
+          "uniprot": 54,
+          "atom": "O",
+          "aa": "C",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 52,
+          "uniprot": 73,
+          "atom": "N",
+          "aa": "L",
+          "on_map": true
+        },
+        "distance": 2.8,
+        "weight": 0.7,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 34,
+          "uniprot": 55,
+          "atom": "N",
+          "aa": "S",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 95,
+          "uniprot": 116,
+          "atom": "O",
+          "aa": "S",
+          "on_map": true
+        },
+        "distance": 2.8,
+        "weight": 0.7,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 34,
+          "uniprot": 55,
+          "atom": "O",
+          "aa": "S",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 95,
+          "uniprot": 116,
+          "atom": "N",
+          "aa": "S",
+          "on_map": true
+        },
+        "distance": 2.9,
+        "weight": 0.6,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 35,
+          "uniprot": 56,
+          "atom": "N",
+          "aa": "W",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 50,
+          "uniprot": 71,
+          "atom": "O",
+          "aa": "L",
+          "on_map": true
+        },
+        "distance": 2.8,
+        "weight": 0.7,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 35,
+          "uniprot": 56,
+          "atom": "O",
+          "aa": "W",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 49,
+          "uniprot": 70,
+          "atom": "N",
+          "aa": "L",
+          "on_map": true
+        },
+        "distance": 2.9,
+        "weight": 0.6,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 35,
+          "uniprot": 56,
+          "atom": "O",
+          "aa": "W",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 50,
+          "uniprot": 71,
+          "atom": "N",
+          "aa": "L",
+          "on_map": true
+        },
+        "distance": 3.4,
+        "weight": 0.1,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 36,
+          "uniprot": 57,
+          "atom": "N",
+          "aa": "L",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 93,
+          "uniprot": 114,
+          "atom": "O",
+          "aa": "F",
+          "on_map": true
+        },
+        "distance": 2.8,
+        "weight": 0.7,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 36,
+          "uniprot": 57,
+          "atom": "O",
+          "aa": "L",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 93,
+          "uniprot": 114,
+          "atom": "N",
+          "aa": "F",
+          "on_map": true
+        },
+        "distance": 3.0,
+        "weight": 0.5,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 37,
+          "uniprot": 58,
+          "atom": "N",
+          "aa": "F",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 47,
+          "uniprot": 68,
+          "atom": "O",
+          "aa": "T",
+          "on_map": true
+        },
+        "distance": 2.8,
+        "weight": 0.7,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 37,
+          "uniprot": 58,
+          "atom": "O",
+          "aa": "F",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 47,
+          "uniprot": 68,
+          "atom": "N",
+          "aa": "T",
+          "on_map": true
+        },
+        "distance": 2.8,
+        "weight": 0.7,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 38,
+          "uniprot": 59,
+          "atom": "N",
+          "aa": "Q",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 91,
+          "uniprot": 112,
+          "atom": "O",
+          "aa": "Y",
+          "on_map": true
+        },
+        "distance": 2.8,
+        "weight": 0.7,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 38,
+          "uniprot": 59,
+          "atom": "O",
+          "aa": "Q",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 91,
+          "uniprot": 112,
+          "atom": "N",
+          "aa": "Y",
+          "on_map": true
+        },
+        "distance": 2.9,
+        "weight": 0.6,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 38,
+          "uniprot": 59,
+          "atom": "NE2",
+          "aa": "Q",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 39,
+          "uniprot": 60,
+          "atom": "O",
+          "aa": "P",
+          "on_map": true
+        },
+        "distance": 3.4,
+        "weight": 0.1,
+        "type": "mixed"
+      },
+      {
+        "a": {
+          "pdb": 38,
+          "uniprot": 59,
+          "atom": "NE2",
+          "aa": "Q",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 44,
+          "uniprot": 65,
+          "atom": "O",
+          "aa": "A",
+          "on_map": true
+        },
+        "distance": 2.8,
+        "weight": 0.7,
+        "type": "mixed"
+      },
+      {
+        "a": {
+          "pdb": 39,
+          "uniprot": 60,
+          "atom": "O",
+          "aa": "P",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 41,
+          "uniprot": 62,
+          "atom": "N",
+          "aa": "G",
+          "on_map": true
+        },
+        "distance": 3.3,
+        "weight": 0.2,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 41,
+          "uniprot": 62,
+          "atom": "O",
+          "aa": "G",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 43,
+          "uniprot": 64,
+          "atom": "N",
+          "aa": "A",
+          "on_map": true
+        },
+        "distance": 3.2,
+        "weight": 0.3,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 41,
+          "uniprot": 62,
+          "atom": "O",
+          "aa": "G",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 44,
+          "uniprot": 65,
+          "atom": "N",
+          "aa": "A",
+          "on_map": true
+        },
+        "distance": 3.2,
+        "weight": 0.3,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 43,
+          "uniprot": 64,
+          "atom": "O",
+          "aa": "A",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 45,
+          "uniprot": 66,
+          "atom": "N",
+          "aa": "S",
+          "on_map": true
+        },
+        "distance": 3.7,
+        "weight": 0.0,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 45,
+          "uniprot": 66,
+          "atom": "O",
+          "aa": "S",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 47,
+          "uniprot": 68,
+          "atom": "N",
+          "aa": "T",
+          "on_map": true
+        },
+        "distance": 3.5,
+        "weight": 0.0,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 47,
+          "uniprot": 68,
+          "atom": "O",
+          "aa": "T",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 49,
+          "uniprot": 70,
+          "atom": "N",
+          "aa": "L",
+          "on_map": true
+        },
+        "distance": 3.7,
+        "weight": 0.0,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 49,
+          "uniprot": 70,
+          "atom": "O",
+          "aa": "L",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 60,
+          "uniprot": 81,
+          "atom": "N",
+          "aa": "A",
+          "on_map": true
+        },
+        "distance": 2.8,
+        "weight": 0.7,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 51,
+          "uniprot": 72,
+          "atom": "N",
+          "aa": "Y",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 58,
+          "uniprot": 79,
+          "atom": "O",
+          "aa": "K",
+          "on_map": true
+        },
+        "distance": 2.8,
+        "weight": 0.7,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 51,
+          "uniprot": 72,
+          "atom": "O",
+          "aa": "Y",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 58,
+          "uniprot": 79,
+          "atom": "N",
+          "aa": "K",
+          "on_map": true
+        },
+        "distance": 2.9,
+        "weight": 0.6,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 53,
+          "uniprot": 74,
+          "atom": "O",
+          "aa": "S",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 55,
+          "uniprot": 76,
+          "atom": "N",
+          "aa": "N",
+          "on_map": true
+        },
+        "distance": 3.5,
+        "weight": 0.0,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 53,
+          "uniprot": 74,
+          "atom": "OG",
+          "aa": "S",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 55,
+          "uniprot": 76,
+          "atom": "N",
+          "aa": "N",
+          "on_map": true
+        },
+        "distance": 3.2,
+        "weight": 0.3,
+        "type": "mixed"
+      },
+      {
+        "a": {
+          "pdb": 53,
+          "uniprot": 74,
+          "atom": "OG",
+          "aa": "S",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 55,
+          "uniprot": 76,
+          "atom": "O",
+          "aa": "N",
+          "on_map": true
+        },
+        "distance": 3.7,
+        "weight": 0.0,
+        "type": "mixed"
+      },
+      {
+        "a": {
+          "pdb": 55,
+          "uniprot": 76,
+          "atom": "O",
+          "aa": "N",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 57,
+          "uniprot": 78,
+          "atom": "N",
+          "aa": "P",
+          "on_map": true
+        },
+        "distance": 3.5,
+        "weight": 0.0,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 56,
+          "uniprot": 77,
+          "atom": "O",
+          "aa": "K",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 58,
+          "uniprot": 79,
+          "atom": "N",
+          "aa": "K",
+          "on_map": true
+        },
+        "distance": 3.4,
+        "weight": 0.1,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 60,
+          "uniprot": 81,
+          "atom": "O",
+          "aa": "A",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 62,
+          "uniprot": 83,
+          "atom": "N",
+          "aa": "G",
+          "on_map": true
+        },
+        "distance": 3.4,
+        "weight": 0.1,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 60,
+          "uniprot": 81,
+          "atom": "O",
+          "aa": "A",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 63,
+          "uniprot": 84,
+          "atom": "N",
+          "aa": "L",
+          "on_map": true
+        },
+        "distance": 3.1,
+        "weight": 0.4,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 61,
+          "uniprot": 82,
+          "atom": "O",
+          "aa": "E",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 63,
+          "uniprot": 84,
+          "atom": "N",
+          "aa": "L",
+          "on_map": true
+        },
+        "distance": 3.3,
+        "weight": 0.2,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 63,
+          "uniprot": 84,
+          "atom": "O",
+          "aa": "L",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 65,
+          "uniprot": 86,
+          "atom": "N",
+          "aa": "T",
+          "on_map": true
+        },
+        "distance": 3.0,
+        "weight": 0.5,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 66,
+          "uniprot": 87,
+          "atom": "O",
+          "aa": "Q",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 82,
+          "uniprot": 103,
+          "atom": "OG",
+          "aa": "S",
+          "on_map": true
+        },
+        "distance": 3.4,
+        "weight": 0.1,
+        "type": "mixed"
+      },
+      {
+        "a": {
+          "pdb": 67,
+          "uniprot": 88,
+          "atom": "O",
+          "aa": "R",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 82,
+          "uniprot": 103,
+          "atom": "N",
+          "aa": "S",
+          "on_map": true
+        },
+        "distance": 3.0,
+        "weight": 0.5,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 69,
+          "uniprot": 90,
+          "atom": "N",
+          "aa": "S",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 80,
+          "uniprot": 101,
+          "atom": "O",
+          "aa": "T",
+          "on_map": true
+        },
+        "distance": 2.9,
+        "weight": 0.6,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 69,
+          "uniprot": 90,
+          "atom": "O",
+          "aa": "S",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 80,
+          "uniprot": 101,
+          "atom": "N",
+          "aa": "T",
+          "on_map": true
+        },
+        "distance": 2.8,
+        "weight": 0.7,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 69,
+          "uniprot": 90,
+          "atom": "OG",
+          "aa": "S",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 80,
+          "uniprot": 101,
+          "atom": "O",
+          "aa": "T",
+          "on_map": true
+        },
+        "distance": 3.6,
+        "weight": 0.0,
+        "type": "mixed"
+      },
+      {
+        "a": {
+          "pdb": 71,
+          "uniprot": 92,
+          "atom": "N",
+          "aa": "K",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 78,
+          "uniprot": 99,
+          "atom": "O",
+          "aa": "V",
+          "on_map": true
+        },
+        "distance": 2.9,
+        "weight": 0.6,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 71,
+          "uniprot": 92,
+          "atom": "O",
+          "aa": "K",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 78,
+          "uniprot": 99,
+          "atom": "N",
+          "aa": "V",
+          "on_map": true
+        },
+        "distance": 2.8,
+        "weight": 0.7,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 72,
+          "uniprot": 93,
+          "atom": "NH2",
+          "aa": "R",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 74,
+          "uniprot": 95,
+          "atom": "O",
+          "aa": "G",
+          "on_map": true
+        },
+        "distance": 3.5,
+        "weight": 0.0,
+        "type": "mixed"
+      },
+      {
+        "a": {
+          "pdb": 73,
+          "uniprot": 94,
+          "atom": "N",
+          "aa": "L",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 76,
+          "uniprot": 97,
+          "atom": "O",
+          "aa": "T",
+          "on_map": true
+        },
+        "distance": 2.8,
+        "weight": 0.7,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 73,
+          "uniprot": 94,
+          "atom": "O",
+          "aa": "L",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 75,
+          "uniprot": 96,
+          "atom": "N",
+          "aa": "D",
+          "on_map": true
+        },
+        "distance": 3.2,
+        "weight": 0.3,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 73,
+          "uniprot": 94,
+          "atom": "O",
+          "aa": "L",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 76,
+          "uniprot": 97,
+          "atom": "N",
+          "aa": "T",
+          "on_map": true
+        },
+        "distance": 2.9,
+        "weight": 0.6,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 74,
+          "uniprot": 95,
+          "atom": "O",
+          "aa": "G",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 76,
+          "uniprot": 97,
+          "atom": "N",
+          "aa": "T",
+          "on_map": true
+        },
+        "distance": 3.7,
+        "weight": 0.0,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 79,
+          "uniprot": 100,
+          "atom": "O",
+          "aa": "L",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 80,
+          "uniprot": 101,
+          "atom": "OG1",
+          "aa": "T",
+          "on_map": true
+        },
+        "distance": 3.6,
+        "weight": 0.0,
+        "type": "mixed"
+      },
+      {
+        "a": {
+          "pdb": 81,
+          "uniprot": 102,
+          "atom": "O",
+          "aa": "L",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 83,
+          "uniprot": 104,
+          "atom": "N",
+          "aa": "D",
+          "on_map": true
+        },
+        "distance": 3.6,
+        "weight": 0.0,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 83,
+          "uniprot": 104,
+          "atom": "O",
+          "aa": "D",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 85,
+          "uniprot": 106,
+          "atom": "N",
+          "aa": "R",
+          "on_map": true
+        },
+        "distance": 3.4,
+        "weight": 0.1,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 83,
+          "uniprot": 104,
+          "atom": "OD2",
+          "aa": "D",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 85,
+          "uniprot": 106,
+          "atom": "NE",
+          "aa": "R",
+          "on_map": true
+        },
+        "distance": 2.8,
+        "weight": 0.7,
+        "type": "sidechain"
+      },
+      {
+        "a": {
+          "pdb": 85,
+          "uniprot": 106,
+          "atom": "N",
+          "aa": "R",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 88,
+          "uniprot": 109,
+          "atom": "OD1",
+          "aa": "N",
+          "on_map": true
+        },
+        "distance": 3.2,
+        "weight": 0.3,
+        "type": "mixed"
+      },
+      {
+        "a": {
+          "pdb": 85,
+          "uniprot": 106,
+          "atom": "O",
+          "aa": "R",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 87,
+          "uniprot": 108,
+          "atom": "N",
+          "aa": "E",
+          "on_map": true
+        },
+        "distance": 3.3,
+        "weight": 0.2,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 85,
+          "uniprot": 106,
+          "atom": "O",
+          "aa": "R",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 88,
+          "uniprot": 109,
+          "atom": "N",
+          "aa": "N",
+          "on_map": true
+        },
+        "distance": 2.9,
+        "weight": 0.6,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 85,
+          "uniprot": 106,
+          "atom": "O",
+          "aa": "R",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 89,
+          "uniprot": 110,
+          "atom": "N",
+          "aa": "E",
+          "on_map": true
+        },
+        "distance": 3.7,
+        "weight": 0.0,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 86,
+          "uniprot": 107,
+          "atom": "O",
+          "aa": "R",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 88,
+          "uniprot": 109,
+          "atom": "N",
+          "aa": "N",
+          "on_map": true
+        },
+        "distance": 3.2,
+        "weight": 0.3,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 86,
+          "uniprot": 107,
+          "atom": "O",
+          "aa": "R",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 89,
+          "uniprot": 110,
+          "atom": "N",
+          "aa": "E",
+          "on_map": true
+        },
+        "distance": 3.2,
+        "weight": 0.3,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 87,
+          "uniprot": 108,
+          "atom": "O",
+          "aa": "E",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 89,
+          "uniprot": 110,
+          "atom": "N",
+          "aa": "E",
+          "on_map": true
+        },
+        "distance": 3.7,
+        "weight": 0.0,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 88,
+          "uniprot": 109,
+          "atom": "O",
+          "aa": "N",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 90,
+          "uniprot": 111,
+          "atom": "N",
+          "aa": "G",
+          "on_map": true
+        },
+        "distance": 3.5,
+        "weight": 0.0,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 88,
+          "uniprot": 109,
+          "atom": "O",
+          "aa": "N",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 92,
+          "uniprot": 113,
+          "atom": "OH",
+          "aa": "Y",
+          "on_map": true
+        },
+        "distance": 2.8,
+        "weight": 0.7,
+        "type": "mixed"
+      },
+      {
+        "a": {
+          "pdb": 90,
+          "uniprot": 111,
+          "atom": "N",
+          "aa": "G",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 110,
+          "uniprot": 131,
+          "atom": "O",
+          "aa": "V",
+          "on_map": true
+        },
+        "distance": 3.0,
+        "weight": 0.5,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 90,
+          "uniprot": 111,
+          "atom": "O",
+          "aa": "G",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 110,
+          "uniprot": 131,
+          "atom": "N",
+          "aa": "V",
+          "on_map": true
+        },
+        "distance": 2.9,
+        "weight": 0.6,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 92,
+          "uniprot": 113,
+          "atom": "N",
+          "aa": "Y",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 108,
+          "uniprot": 129,
+          "atom": "O",
+          "aa": "V",
+          "on_map": true
+        },
+        "distance": 2.9,
+        "weight": 0.6,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 92,
+          "uniprot": 113,
+          "atom": "O",
+          "aa": "Y",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 108,
+          "uniprot": 129,
+          "atom": "N",
+          "aa": "V",
+          "on_map": true
+        },
+        "distance": 2.8,
+        "weight": 0.7,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 94,
+          "uniprot": 115,
+          "atom": "N",
+          "aa": "C",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 105,
+          "uniprot": 126,
+          "atom": "OG",
+          "aa": "S",
+          "on_map": true
+        },
+        "distance": 2.9,
+        "weight": 0.6,
+        "type": "mixed"
+      },
+      {
+        "a": {
+          "pdb": 94,
+          "uniprot": 115,
+          "atom": "O",
+          "aa": "C",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 105,
+          "uniprot": 126,
+          "atom": "N",
+          "aa": "S",
+          "on_map": true
+        },
+        "distance": 2.9,
+        "weight": 0.6,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 96,
+          "uniprot": 117,
+          "atom": "N",
+          "aa": "A",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 103,
+          "uniprot": 124,
+          "atom": "O",
+          "aa": "Y",
+          "on_map": true
+        },
+        "distance": 3.0,
+        "weight": 0.5,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 96,
+          "uniprot": 117,
+          "atom": "O",
+          "aa": "A",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 103,
+          "uniprot": 124,
+          "atom": "N",
+          "aa": "Y",
+          "on_map": true
+        },
+        "distance": 2.9,
+        "weight": 0.6,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 98,
+          "uniprot": 119,
+          "atom": "N",
+          "aa": "S",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 101,
+          "uniprot": 122,
+          "atom": "O",
+          "aa": "I",
+          "on_map": true
+        },
+        "distance": 2.9,
+        "weight": 0.6,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 98,
+          "uniprot": 119,
+          "atom": "O",
+          "aa": "S",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 100,
+          "uniprot": 121,
+          "atom": "N",
+          "aa": "S",
+          "on_map": true
+        },
+        "distance": 3.2,
+        "weight": 0.3,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 98,
+          "uniprot": 119,
+          "atom": "O",
+          "aa": "S",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 101,
+          "uniprot": 122,
+          "atom": "N",
+          "aa": "I",
+          "on_map": true
+        },
+        "distance": 2.9,
+        "weight": 0.6,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 99,
+          "uniprot": 120,
+          "atom": "O",
+          "aa": "N",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 101,
+          "uniprot": 122,
+          "atom": "N",
+          "aa": "I",
+          "on_map": true
+        },
+        "distance": 3.1,
+        "weight": 0.4,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 101,
+          "uniprot": 122,
+          "atom": "O",
+          "aa": "I",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 103,
+          "uniprot": 124,
+          "atom": "N",
+          "aa": "Y",
+          "on_map": true
+        },
+        "distance": 3.7,
+        "weight": 0.0,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 106,
+          "uniprot": 127,
+          "atom": "O",
+          "aa": "H",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 108,
+          "uniprot": 129,
+          "atom": "N",
+          "aa": "V",
+          "on_map": true
+        },
+        "distance": 3.6,
+        "weight": 0.0,
+        "type": "backbone"
+      },
+      {
+        "a": {
+          "pdb": 108,
+          "uniprot": 129,
+          "atom": "O",
+          "aa": "V",
+          "on_map": true
+        },
+        "b": {
+          "pdb": 110,
+          "uniprot": 131,
+          "atom": "N",
+          "aa": "V",
+          "on_map": true
+        },
+        "distance": 3.4,
+        "weight": 0.1,
+        "type": "backbone"
+      }
+    ]
+  }
 }
